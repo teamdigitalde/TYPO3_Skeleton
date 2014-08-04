@@ -7,10 +7,10 @@ To pull the current repository contents to the destination on webserver simply e
 `git pull git@github.com:teamdigitalde/TYPO3_Skeleton.git`
 
 Add the following uncommented line, to the website's root page Resources > TypoScript Configuration to include this file
-# <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TsConfig">
+`<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TsConfig/page.ts">`
 
 Add the following uncommented line, to the root sys_template Constants to include this file
-# <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/constants.ts">
+`<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/constants.ts">`
 
 Add the following uncommented line, to the root sys_template Setup to include this file
-# <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/setup.ts">
+`<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/setup.ts">`
