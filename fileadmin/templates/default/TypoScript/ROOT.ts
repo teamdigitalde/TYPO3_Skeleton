@@ -15,4 +15,3 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/Page_Blocks/ROOT_Page_Blocks.ts">
 # Page_Configuration
 <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/Page_Configuration/ROOT_Page_Configuration.ts">
-
