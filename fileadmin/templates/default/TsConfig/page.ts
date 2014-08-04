@@ -2,13 +2,9 @@
 # <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/default/TSConfig/page.ts">
 
 
-# Show only the chosen columns in the page module
-# 0=normal, 1=left, 2=right, 3=border
-mod.SHARED.colPos_list = 1,0,2
-
 # Set the default label and flag
-mod.SHARED.defaultLanguageLabel = English
-mod.SHARED.defaultLanguageFlag = gb.gif
+mod.SHARED.defaultLanguageLabel = deutsch
+mod.SHARED.defaultLanguageFlag = de
 
 # Show the content element wizard with tabs (for consistency)
 mod.wizards.newContentElement.renderMode = tabs
