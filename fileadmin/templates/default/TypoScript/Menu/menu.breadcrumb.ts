@@ -1,35 +1,9 @@
 # For the breadcrumb cObject we use a HMENU of the type 'rootline'
 menu.breadcrumb = COA
-menu.breadcrumb {
-  10 = HMENU
-  10 {
-    # Select HMENU type 'special.rootline'
-    special = rootline
-  
-    # Traverse the pagetree starting at the rootpage (0) and ending at the current page (-1)
-    special.range = 0|-1
-  
-    # Pages which are excluded from the regular menus should still be shown in the breadcrumb
-    includeNotInMenu = 1
-  
-    # This menu has only 1 level since this is a rootline-menu
-    1 = TMENU
-    1 {
-      # Remove the ancient onfocus="blurLink(this);" from link tags
-      noBlur = 1
-    
-      # Append spaces and >> to normal linked breadcrumb items
-      NO.allWrap = |&#32;&raquo;&#32;
-      NO.stdWrap.htmlSpecialChars = 1
-    }
-  }
-}
-
-menu.richbreadcrumb = COA
-menu.richbreadcrumb.10 = TEXT
-menu.richbreadcrumb.10.value = <p id="breadcrumblabel">Sie sind hier:</p>
-menu.richbreadcrumb.20 = HMENU
-menu.richbreadcrumb.20 {
+menu.breadcrumb.10 = TEXT
+menu.breadcrumb.10.value = <p id="breadcrumblabel">Sie sind hier:</p>
+menu.breadcrumb.20 = HMENU
+menu.breadcrumb.20 {
   special = rootline
   special.range = 0|-1
   includeNotInMenu = 1
@@ -50,8 +24,6 @@ menu.richbreadcrumb.20 {
     #CUR.doNotLinkIt = 1
   }
 }
-menu.breadcrumb >
-menu.breadcrumb < menu.richbreadcrumb
 
 # This condition checks whether a news article will be shown in single view
 [globalVar = GP:tx_ttnews|tt_news > 0] && [globalVar = TSFE:id = {$plugin.tt_news.singlePid}]

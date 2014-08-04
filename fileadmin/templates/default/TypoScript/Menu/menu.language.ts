@@ -10,9 +10,6 @@ menu.language {
   1 {
     wrap = <ul>|</ul>
     
-    # Remove the (old) default behaviour which adds onfocus="blurLink(this);" to all links
-    noBlur = 1
-    
     NO = 1
     NO {
       # Override the standard menu item value (which is the page title) with our own cObject

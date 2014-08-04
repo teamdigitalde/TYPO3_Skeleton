@@ -13,7 +13,7 @@ lib.staticHeaderImage {
     width = 682c
     height = 257c
   }
-  altText = Fritz Sanitär Stockhausen
+  altText = Static Header Image
   stdWrap.typolink.parameter = 8
   stdWrap.typolink.title = Zurück zur Startseite
 } 
