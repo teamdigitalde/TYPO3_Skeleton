@@ -27,7 +27,7 @@ tt_content.gridelements_pi1.20.10.setup {
 			file = fileadmin/templates/default/Html/Gridelements/50-50.html
 		}
 	}
-	tt_content.gridelements_pi1.20.10.setup {
+	
 	### 3spaltig Text 33/33/33
 	4 < lib.gridelements.defaultGridSetup
 	4 {
