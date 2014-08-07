@@ -1,7 +1,4 @@
-# Add the following uncommented line, to the website's root page Resources > TypoScript Configuration to include this file
-# <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/Page_Blocks/ROOT_Blocks.ts">
-
-### Add TS
+### Add TS for Page Blocks Configuration
 <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/Page_Blocks/page.content.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/Page_Blocks/page.footer.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/Page_Blocks/page.searchbox.ts">

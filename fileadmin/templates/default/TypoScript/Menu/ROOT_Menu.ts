@@ -1,7 +1,4 @@
-# Add the following uncommented line, to the website's root page Resources > TypoScript Configuration to include this file
-# <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/Menu/ROOT_Menu.ts">
-
-### Add TS
+### Add TS for Menu Configuration
 <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/Menu/menu.defaults.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/Menu/menu.breadcrumb.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/Menu/menu.top.ts">

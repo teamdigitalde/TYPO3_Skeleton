@@ -1,8 +1,4 @@
-# Add the following uncommented line, to the website's root page Resources > TypoScript Configuration to include this file
-# <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/Extension/gridelements.ts">
-
 ### Grid Elemente
-
 # Überschrift einblenden
 tt_content.gridelements_pi1.10=<lib.stdheader
 
