@@ -10,9 +10,9 @@ Add the following uncommented line, to the website's root page Resources > TypoS
 `<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TsConfig/page.ts">`
 
 Add the following uncommented line, to the root sys_template Constants to include this file
-`<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/constants.ts">`
+`<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/Constants.ts">`
 
 Add the following uncommented line, to the root sys_template Setup to include this file
-`<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/setup.ts">`
+`<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/default/TypoScript/ROOT.ts">`
 
 After fetching the default files, the only thing to to is adding a new root template to the root page, adding static extension templates and overwriting some constants. Done :-)
