@@ -1,6 +1,9 @@
 # Add the following uncommented line, to the website's root page Resources > TypoScript Configuration to include this file
 # <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/default/TSConfig/page.ts">
 
+#wo liegen die Backend Layouts?
+TCEFORM.pages.backend_layout.PAGE_TSCONFIG_ID = 13
+TCEFORM.pages.backend_layout_next_level.PAGE_TSCONFIG_ID = 13
 
 # Set the default label and flag
 mod.SHARED.defaultLanguageLabel = deutsch
@@ -40,11 +43,25 @@ TCEFORM.tt_content.section_frame{
   // If an editor creates a page it should be visible to all editors and admins
 TCEMAIN {
 	  // group "all users"
-	permissions.groupid = 5
+	permissions.groupid = 1
 
 	user = show,edit,delete,new,editcontent
 	group = show,edit,delete,new,editcontent
 	everybody =
+}
+
+// better wording for header layouts
+TCEFORM.tt_content.header_layout {
+  altLabels {
+    1 = LLL:EXT:rtehtmlarea/locallang.xml:Heading 1
+    2 = LLL:EXT:rtehtmlarea/locallang.xml:Heading 2
+    3 = LLL:EXT:rtehtmlarea/locallang.xml:Heading 3
+    4 = LLL:EXT:rtehtmlarea/locallang.xml:Heading 4
+    5 = LLL:EXT:rtehtmlarea/locallang.xml:Heading 5
+    6 = LLL:EXT:rtehtmlarea/locallang.xml:Heading 6
+  }
+  removeItems = 0
+  addItems.200 = Überschrift ohne H-Tag
 }
 
 # Use different views for the news plugin, those entries show up in the news content element configuration
