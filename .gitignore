@@ -25,3 +25,8 @@ dwsync.xml
 
 # Ignore temp directory.
 /typo3temp/
+
+/.htaccess
+/index.php
+/typo3_src
+/typo3conf/
