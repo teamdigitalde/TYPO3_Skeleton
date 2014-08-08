@@ -6,29 +6,26 @@ config {
   debug = 0
   
   # cat=config; type=string; label=Domain name for Base URL: (excluding slashes and protocol like http://)
-  domain = s03.team-digital.de
+  domain = example.com
 }
 
 filepaths {
   # cat=filepaths; type=string; label=HTML Templates: Location of the (X)HTML templates relative to site
-  templates = fileadmin/templates/default/Html/
+  templates = fileadmin/templates/example.com/Html/
   
   # cat=filepaths; type=string; label=CSS: Location of the Cascading Style Sheets relative to site
-  css = fileadmin/templates/default/css/
+  css = fileadmin/templates/example.com/Css/
   
   # cat=filepaths; type=string; label=Images: Location of the images relative to site
-  images = fileadmin/templates/default/Resources/
+  images = fileadmin/templates/example.com/Resources/Images/
 
   # cat=filepaths; type=string; label=Scripts: Location of the Javascript files relative to site
-  scripts = fileadmin/templates/default/js/
-
-  # cat=filepaths; type=string; label=HTML Templates for extensions: Location of the (X)HTML templates for extensions
-  extensiontemplates = fileadmin/default/templates/extensions/
+  scripts = fileadmin/templates/example.com/Js/
 }
 
 menu {
   # cat=navigation menus; type=string; label= Top-menu pages: Comma separated list of page id's to be included in top-right menu.
-  top.pages = 28
+  top.pages = 6
 }
 
 styles.content {
