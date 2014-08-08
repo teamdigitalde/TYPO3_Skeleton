@@ -1,0 +1,37 @@
+<header>
+	<div class="row top">
+		<div class="twelve columns">
+			<div id="logo">
+				<f:link.page pageUid="1" additionalAttributes="{title:'Zurück zur Startseite'}">
+					<f:image src="fileadmin/templates/example.com/Resources/Images/logo.png" width="250" height="74" alt="Logo" additionalAttributes="{class:'logo'}"></f:image>
+				</f:link.page>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="row navbar">
+	<nav class="row " id="nav1">
+		<a class="toggle" data-trigger="#nav1 #menu" href="#"><i class="icon-menu"></i></a>
+		<f:format.html parseFuncTSPath="">{mainMenu}</f:format.html>
+	</nav>
+</div>
+<div role="main" class="row">
+	<div class="row" id="content">
+		<f:if condition="{0:layoutclass} == {0:'layout1'}">
+			<f:render section="layout1" />
+		</f:if>
+		<f:if condition="{0:layoutclass} == {0:'layout2'}">
+			<f:render section="layout2" />
+		</f:if>
+		<f:if condition="{0:layoutclass} == {0:'layout3'}">
+			<f:render section="layout3" />
+		</f:if>
+	</div>
+</div>
+<footer class="pagefooter">
+	<div class="row">
+		<div class="twelve columns">
+			<p>Footer</p>
+		</div>
+	</div>
+</footer>
