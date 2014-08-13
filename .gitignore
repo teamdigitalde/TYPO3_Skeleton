@@ -5,7 +5,6 @@ dwsync.xml
 
 ## TYPO3 v4
 # Ignore serveral upload and file directories.
-/fileadmin/user_upload/
 /fileadmin/_temp_/
 /uploads/
 
