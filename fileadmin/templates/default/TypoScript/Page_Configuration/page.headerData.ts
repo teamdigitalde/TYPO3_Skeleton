@@ -22,7 +22,7 @@ page.headerData {
   <meta name="ICBM" content="50.74141, 9.26088" />
   )
   50 = TEXT
-  50.value = <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  50.value = <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   #60 = TEXT
   #60.value = <script gumby-touch="fileadmin/templates/js/libs" src="fileadmin/templates/js/libs/gumby.min.js"></script>
