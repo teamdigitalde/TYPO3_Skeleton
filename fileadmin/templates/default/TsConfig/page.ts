@@ -131,7 +131,7 @@ RTE.default {
 		pastetoggle.setActiveOnRteOpen = 1
 		pastetoggle.hidden = 1
 	}
-	allowedClasses := addToList(align-left, align-center, align-right, align-justify, indent, links-kasten, kleiner, groesser-125, groesser-150)
+	allowedClasses := addToList(align-left, align-center, align-right, align-justify, indent, kleiner, groesser-125, groesser-150)
 	## Markup options (htmlArea RTE only)
 	enableWordClean = 1
 	removeTrailingBR = 1
