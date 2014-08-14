@@ -83,3 +83,16 @@ styles.content.imgtext.linkWrap {
     lightboxCssClass = fancybox
 }
 
+# some domainspecific values
+meta {
+	google-site-verification {
+  	active = 0
+  	value = 
+	}
+	geo {
+		active = 0
+		region = DE-HE
+		placename = Lauterbach
+		position = 50.63;9.39
+	}
+}

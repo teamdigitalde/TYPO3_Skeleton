@@ -4,10 +4,13 @@ page.meta {
   author.field = author
   keywords.field = keywords
   robots = INDEX,FOLLOW
+	google-site-verification.cObject = TEXT
+	google-site-verification.cObject {
+    value = {$meta.google-site-verification.value}
+    if.isTrue = {$meta.google-site-verification.active}
+	}
 }
-[globalString = IENV:HTTP_HOST=www.romag.de]
-page.meta.google-site-verification = EgAUENJzbxs19X6K2CnCv2cLxkoBcByfN_tpmcFcS_g
-[global]
+
 [applicationContext = Development]
 page.meta.robots = NOINDEX,NOFOLLOW
 [global]
