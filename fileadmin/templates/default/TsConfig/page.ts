@@ -5,6 +5,13 @@
 TCEFORM.pages.backend_layout.PAGE_TSCONFIG_ID = 13
 TCEFORM.pages.backend_layout_next_level.PAGE_TSCONFIG_ID = 13
 
+# Text -> "Kopie1" entfernen
+TCEMAIN.table.pages.disablePrependAtCopy = 1
+TCEMAIN.table.tt_content.disablePrependAtCopy = 1
+
+# Text -> "Translate to" entfernen
+TCEMAIN.translateToMessage = 
+
 # Set the default label and flag
 mod.SHARED.defaultLanguageLabel = deutsch
 mod.SHARED.defaultLanguageFlag = de
@@ -30,15 +37,13 @@ TCEFORM {
 		colPos.keepItems = 1,0,2
 	}
 }
-/*
-##frames
-TCEFORM.tt_content.section_frame{
-	addItems {
-		30 = Frame 3, width 2/3
-		31 = Frame 4, width 1/3
-	}
+
+# Neuen Rahmen hinzufügen, bestehende entfernen
+TCEFORM.tt_content.section_frame {
+     removeItems = 1,5,6,10,11,12,20,21
+     #addItems.100 = example
+     #altLabels.100 = example
 }
-*/
 
   // If an editor creates a page it should be visible to all editors and admins
 TCEMAIN {
@@ -97,3 +102,128 @@ tx_news.templateLayouts {
 		allowedNewTables = fe_groups,fe_users,sys_note
 	}
 [END]
+
+#### RTE  ###
+
+# activate pastetoggle and hide button
+RTE.default.buttons.pastetoggle.setActiveOnRteOpen = 1
+#dont hide per default, unusable with html-tags in predefined-context #RTE.default.buttons.pastetoggle.hidden = 1
+
+RTE.default {
+	## "Zauberbild" ausblenden
+	contentCSS = {$filepaths.css}rte.css
+	showTagFreeClasses = 1
+	showButtons = *
+	hideButtons = textindicator, user, fontstyle, fontsize,  inserttag, strikethrough,lefttoright, righttoleft, textcolor, bgcolor, underline, emoticon, spellcheck,  justifyfull, subscript, superscript, copy, cut, paste, findreplace, about, showhelp,blockquote, insertparagraphbefore, insertparagraphafter, lefttoright, righttoleft, language,showlanguagemarks,definitionlist, definitionitem,editelement, showmicrodata, insertsofthyphen
+	keepButtonGroupTogether = 1
+	#hidePStyleItems = ADDRESS, H1, PRE, DIV  
+	buttons { 
+		image.options.removeItems = magic,dragdrop
+		formatblock.removeItems = ADDRESS, H1, PRE, DIV 
+		textstyle.tags.span.allowedClasses := addToList(kleiner, groesser-125, groesser-150)
+		blockstyle.tags.div.allowedClasses := addToList()
+		blockstyle.tags.table.allowedClasses := addToList()
+		blockstyle.tags.td.allowedClasses := addToList()
+		image.properties.class.allowedClasses := addToList()
+		link.properties.class.allowedClasses := addToList()
+		blockstyle.showTagFreeClasses = 1
+		textstyle.showTagFreeClasses = 1
+		pastetoggle.setActiveOnRteOpen = 1
+		pastetoggle.hidden = 1
+	}
+	allowedClasses := addToList(align-left, align-center, align-right, align-justify, indent, links-kasten, kleiner, groesser-125, groesser-150)
+	## Markup options (htmlArea RTE only)
+	enableWordClean = 1
+	removeTrailingBR = 1
+	removeComments = 1
+	removeTags = center, o:p, sdfield
+	removeTagsAndContents = style, script
+ 
+	proc {
+		allowedClasses < RTE.default.allowedClasses
+		allowTags := addToList(code, thead, abbr, acronym)
+		entryHTMLparser_db = 1
+		entryHTMLparser_db {
+			tags {
+				# b und i Tags werden ersetzt (em / strong)
+				b.remap = strong
+				i.remap = em
+			}
+		}
+		exitHTMLparser_db = 1
+		exitHTMLparser_db {
+			tags.b.remap = strong
+			tags.i.remap = em
+		}
+	}
+	
+	FE {
+		proc {
+			allowedClasses < RTE.default.allowedClasses
+			allowTags < RTE.default.allowTags
+		}
+	}
+	# Do not allow insertion of the following tags
+	hideTags = font
+		
+	## Configuration specific to the table button or TableOperations feature (htmlArea RTE only)
+	## Use the context menu instead of the toolbar for table operations, but keep toggleborders button in toolbar
+	hideTableOperationsInToolbar = 1
+	buttons.toggleborders.keepInToolbar = 1
+	
+	## Tabellen Editierungs-Optionen (cellspacing/ cellpadding / border)
+	disableSpacingFieldsetInTableOperations=0
+	disableAlignmentFieldsetInTableOperations=1
+	disableColorFieldsetInTableOperations=1
+	disableLayoutFieldsetInTableOperations=0
+	disableBordersFieldsetInTableOperations=0
+}
+
+RTE.classes {
+	align-justify {
+		name = Blocksatz
+		value = text-align: justify;
+	}
+	indent {
+		name = Eingerückt
+		value = padding-left: 10px;
+	}
+	kleiner {
+		name = Schrift kleiner
+	}
+	groesser-125{
+		name = Schrift 125%
+	}
+	groesser-150{
+		name = Schrift 150%
+	} 
+}  
+
+RTE {   
+	classesAnchor {     
+		externalLink {       
+			altText =       
+			titleText =     
+		}     
+		externalLinkInNewWindow {       
+			altText =       
+			titleText = 	     
+		}     
+		internalLink {       
+			altText =       
+			titleText = 	     
+		}     
+		internalLinkInNewWindow {       
+			altText =       
+			titleText =     
+		}      
+		download {       
+			altText =       
+			titleText =     
+		}     
+		mail {       
+			altText =        
+			titleText =      
+		}   
+	} 
+} 
