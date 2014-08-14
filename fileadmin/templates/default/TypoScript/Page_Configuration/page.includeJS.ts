@@ -16,9 +16,10 @@ page {
   includeJSFooterlibs {
     powermailValidationEngine = EXT:powermail/Resources/Public/Js/jquery.validationEngine.js
     powermailValidationEngineEn = EXT:powermail/Resources/Public/Js/jquery.validationEngine-en.js
+	fancybox = {filepaths.scripts}libs/jquery.fancybox.pack.js
   }
-  #includeJSFooter {
+  includeJSFooter {
   #  plugins = {filepaths.scripts}plugins.js
-  #  main = {$filepaths.scripts}main.js
-  #}
+    main = {$filepaths.scripts}main.js
+  }
 }

@@ -74,3 +74,12 @@ contentpage {
 [globalVar = GP:L = 1]
 plugin.meta.language = en
 [global]
+
+
+# Lightbox
+styles.content.imgtext.linkWrap {
+    lightboxEnabled = 1
+    lightboxRelAttribute = lightbox{field:uid}
+    lightboxCssClass = fancybox
+}
+

@@ -21,3 +21,8 @@ Gumby.ready(function() {
 }).touch(function() {
 	Gumby.log("This is a touch enabled device...");
 });
+
+// Fancybox
+$(document).ready(function() {
+	$('.fancybox').fancybox();
+});
