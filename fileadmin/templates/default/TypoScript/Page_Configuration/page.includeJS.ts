@@ -1,6 +1,6 @@
 page {
   includeJSlibs {
-    modernizr = {filepaths.scripts}libs/modernizr-2.6.2.min.js
+    modernizr = {$filepaths.scripts}libs/modernizr-2.6.2.min.js
     #selectivizr = {filepaths.scripts}libs/selectivizr-min.js
     #selectivizr {
     #  allWrap = <!--[if (gte IE 6)&(lte IE 8)]>|<![endif]-->
@@ -16,10 +16,10 @@ page {
   includeJSFooterlibs {
     powermailValidationEngine = EXT:powermail/Resources/Public/Js/jquery.validationEngine.js
     powermailValidationEngineEn = EXT:powermail/Resources/Public/Js/jquery.validationEngine-en.js
-	fancybox = {filepaths.scripts}libs/jquery.fancybox.pack.js
+	fancybox = {$filepaths.scripts}libs/jquery.fancybox.pack.js
   }
   includeJSFooter {
-  #  plugins = {filepaths.scripts}plugins.js
+  #  plugins = {$filepaths.scripts}plugins.js
     main = {$filepaths.scripts}main.js
   }
 }

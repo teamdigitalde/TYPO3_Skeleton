@@ -18,7 +18,7 @@ page.headerData {
   50.value = <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   60 = TEXT
-  60.value = <script gumby-touch="{filepaths.scripts}libs" src="{filepaths.scripts}libs/gumby.min.js"></script>
+  60.value = <script gumby-touch="{$filepaths.scripts}libs" src="{$filepaths.scripts}libs/gumby.min.js"></script>
   
   #70 = TEXT
   #70.value = <link href='http://fonts.googleapis.com/css?family=Lora:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
