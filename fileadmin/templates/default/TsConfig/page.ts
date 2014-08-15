@@ -77,49 +77,44 @@ tx_news.templateLayouts {
 	#custom = fileadmin/Language/news-templates.xml:keyForCustom
 }
 
-# Condition for news storage folder
-[PIDinRootline = 18]
-	mod.web_list {
-		# Limit the creation of new records in this sysFolder to these types
-		allowedNewTables = tx_news_domain_model_news,tx_news_domain_model_category,sys_note
-	}
-
-	# This will open the news singleView page (id 23) when clicking 'preview' for a news record
-	tx_news.singlePid = 23
-
-
-	TCEMAIN {
-		# Clear cache of the News page after content of the News folder has changed
-		clearCacheCmd = 23,30
-		clearCache_pageSiblingChildren = 1
-	}
-[END]
-
-# Condition for frontend user storage folder
-[PIDinRootline = 29]
-	mod.web_list {
-		# limit the creation of new records in this sysFolder to these types
-		allowedNewTables = fe_groups,fe_users,sys_note
-	}
-[END]
-
 #### RTE  ###
+
+RTE.classes {
+	align-justify {
+		name = Blocksatz
+		value = text-align: justify;
+	}
+	indent {
+		name = Eingerückt
+		value = padding-left: 10px;
+	}
+	kleiner {
+		name = Schrift kleiner
+	}
+	groesser-125{
+		name = Schrift 125%
+	}
+	groesser-150{
+		name = Schrift 150%
+	} 
+	fauxHeadline {
+		name = Überschrift ohne H-Tag
+		} 
+}
 
 # activate pastetoggle and hide button
 RTE.default.buttons.pastetoggle.setActiveOnRteOpen = 1
 #dont hide per default, unusable with html-tags in predefined-context #RTE.default.buttons.pastetoggle.hidden = 1
 
 RTE.default {
-	## "Zauberbild" ausblenden
-	contentCSS = {$filepaths.css}rte.css
+	contentCSS = fileadmin/templates/example.de/Css/rte.css
 	showTagFreeClasses = 1
 	showButtons = *
 	hideButtons = textindicator, user, fontstyle, fontsize,  inserttag, strikethrough,lefttoright, righttoleft, textcolor, bgcolor, underline, emoticon, spellcheck,  justifyfull, subscript, superscript, copy, cut, paste, findreplace, about, showhelp,blockquote, insertparagraphbefore, insertparagraphafter, lefttoright, righttoleft, language,showlanguagemarks,definitionlist, definitionitem,editelement, showmicrodata, insertsofthyphen
 	keepButtonGroupTogether = 1
-	#hidePStyleItems = ADDRESS, H1, PRE, DIV  
 	buttons { 
 		image.options.removeItems = magic,dragdrop
-		formatblock.removeItems = ADDRESS, H1, PRE, DIV 
+		formatblock.removeItems = ADDRESS, PRE, DIV, FOOTER, SECTION, ASIDE, BLOCKQUOTE, ARTICLE, HEADER, NAV 
 		textstyle.tags.span.allowedClasses := addToList(kleiner, groesser-125, groesser-150)
 		blockstyle.tags.div.allowedClasses := addToList()
 		blockstyle.tags.table.allowedClasses := addToList()
@@ -178,26 +173,6 @@ RTE.default {
 	disableLayoutFieldsetInTableOperations=0
 	disableBordersFieldsetInTableOperations=0
 }
-
-RTE.classes {
-	align-justify {
-		name = Blocksatz
-		value = text-align: justify;
-	}
-	indent {
-		name = Eingerückt
-		value = padding-left: 10px;
-	}
-	kleiner {
-		name = Schrift kleiner
-	}
-	groesser-125{
-		name = Schrift 125%
-	}
-	groesser-150{
-		name = Schrift 150%
-	} 
-}  
 
 RTE {   
 	classesAnchor {     
