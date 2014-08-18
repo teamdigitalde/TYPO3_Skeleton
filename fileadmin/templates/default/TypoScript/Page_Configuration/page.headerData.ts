@@ -1,10 +1,18 @@
 page.headerData {
-	10 = TEXT
+	10 = COA
 	10 {
-		field = title
-		noTrimWrap = | <title>|</title> |
+		10 = TEXT
+		10.field = title
+		20 = TEXT
+		20 {
+			value = {$meta.pagetitleAddition.value}
+			value.noTrimWrap = {$meta.pagetitleAddition.noTrimWrap}
+			if.isTrue = {$meta.pagetitleAddition.active}
+		}
+		wrap = <title>|</title>
 		htmlSpecialChars = 1
 	}
+	
 	#40 = TEXT
 	#40.value = <link rel="apple-touch-icon" href="http://deinedomain.de/fileadmin/templates/fileadmin/templates/img/apple-touch-icon-144x144-precomposed.png" />
 
