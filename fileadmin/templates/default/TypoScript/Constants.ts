@@ -101,3 +101,4 @@ meta {
 		noTrimWrap = | - ||
 	}
 }
+headerData.hreflang.active = 0
