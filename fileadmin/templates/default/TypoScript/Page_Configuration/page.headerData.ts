@@ -1,3 +1,25 @@
+lib.currentUrl= COA
+lib.currentUrl {
+  10 = TEXT
+  10.typolink {
+    parameter.data = TSFE:id
+    returnLast = url
+    forceAbsoluteUrl = 1
+    addQueryString = 1
+    addQueryString.method = GET
+    addQueryString.exclude = cHash,backPid
+  }
+}
+
+lib.canonical = COA
+lib.canonical {
+  10 = COA
+  10 {
+    10 < lib.currentUrl.10
+    wrap = <link rel="canonical" href="|" />
+  }
+}
+
 page.headerData {
 	10 = COA
 	10 {
@@ -34,4 +56,6 @@ page.headerData {
 	
 	#70 = TEXT
 	#70.value = <link href='http://fonts.googleapis.com/css?family=Lora:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+	
+	5230 < lib.canonical
 }
