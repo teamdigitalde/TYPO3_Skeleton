@@ -60,9 +60,6 @@ contentpage {
   # cat=contentpage; type=int+; label= loginpageID: UID of the customer login page.
   loginpageID = 28
   
-  # cat=contentpage; type=int+; label= examplelanguagesID: UID of the page which has the language menu enabled
-  examplelanguagesID = 25
-  
   # cat=contentpage; type=string; label= language1: name of the default language of this site
   language1 = deutsch
 

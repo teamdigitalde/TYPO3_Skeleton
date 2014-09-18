@@ -1,8 +1,4 @@
 menu.language = HMENU
-
-# We use a condition to show the language menu only on the page with the id from constant contentpage.examplelanguagesID
-[globalVar = TSFE:id = {$contentpage.examplelanguagesID}]
-
 menu.language {
   special = language
   special.value = 0,1
@@ -26,5 +22,3 @@ menu.language {
     }
   }
 }
-
-[global]
