@@ -26,6 +26,8 @@ filepaths {
 menu {
   # cat=navigation menus; type=string; label= Top-menu pages: Comma separated list of page id's to be included in top-right menu.
   top.pages = 6
+  # cat=navigation menus; type=string; label= Footer-menu pages: Comma separated list of page id's to be included in footer menu.
+  footer.pages = 6
 }
 
 styles.content {
