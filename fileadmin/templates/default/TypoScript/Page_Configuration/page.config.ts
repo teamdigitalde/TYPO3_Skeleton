@@ -94,9 +94,10 @@ config {
 }
 
 # Set baseURL setting for http or https
-config.baseURL = http://{$config.domain}/
+config.baseURL >
+config.absRefPrefix = http://{$config.domain}/
 [globalString = IENV:TYPO3_SITE_URL=https://{$config.domain}/]
-config.baseURL = https://{$config.domain}/
+config.absRefPrefix = https://{$config.domain}/
 [global]
 
 // Condition to switch the doctype and xml prologue
