@@ -87,6 +87,10 @@ config {
       90 = RESTORE_REGISTER
     }
   }
+	concatenateCss = 0
+	concatenateJs = 0
+	compressCss = 0
+	compressJs = 0
 }
 
 # Set baseURL setting for http or https
