@@ -91,6 +91,11 @@ config {
 	concatenateJs = 0
 	compressCss = 0
 	compressJs = 0
+	headerComment (
+———————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+| TYPO3 Webdesign und Extbase Programmierung by team digital GmbH © 2014 www.team-digital.de - Alle Rechte vorbehalten.  |
+———————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+  )
 }
 
 # Set baseURL setting for http or https
