@@ -47,12 +47,14 @@ TCEFORM.tt_content.section_frame {
 
   // If an editor creates a page it should be visible to all editors and admins
 TCEMAIN {
-	  // group "all users"
-	permissions.groupid = 1
+	permissions {
+		// group "all users"
+		groupid = 1
 
-	user = show,edit,delete,new,editcontent
-	group = show,edit,delete,new,editcontent
-	everybody =
+		user = show,edit,delete,new,editcontent
+		group = show,edit,delete,new,editcontent
+		everybody =
+	}
 }
 
 // better wording for header layouts
