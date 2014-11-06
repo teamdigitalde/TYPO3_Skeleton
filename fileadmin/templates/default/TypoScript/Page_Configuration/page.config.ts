@@ -47,7 +47,9 @@ config {
   removeDefaultJS        = external
   inlineStyle2TempFile   = 1
 
-  noPageTitle = 2
+  pageTitleFirst = 1
+  pageTitleSeparator = :
+  pageTitleSeparator.noTrimWrap = | | |
 
   // Protect mail addresses from spamming
   spamProtectEmailAddresses = -3

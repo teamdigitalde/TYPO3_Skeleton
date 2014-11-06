@@ -94,10 +94,5 @@ meta {
 		placename = Lauterbach
 		position = 50.63;9.39
 	}
-	pagetitleAddition {
-		active = 1
-		value = Firmenname
-		noTrimWrap = | - ||
-	}
 }
 headerData.hreflang.active = 0
