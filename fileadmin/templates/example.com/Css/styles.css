@@ -55,6 +55,20 @@ h4, h5, h6 {
 .groesser-125 {font-size: 1.25em;}
 .groesser-150 {font-size: 1.5em;}
 
+hr {
+    border: 0px;
+    border-bottom: 1px solid #CCC;
+    clear: both;
+    margin: 16px 0px 18px;
+    height: 0px;
+}
+.maincontent ul, .maincontent ol {
+    margin-left: 2em;
+}
+.maincontent li {
+    list-style: disc;
+}
+
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,
 .fancybox-skin,
