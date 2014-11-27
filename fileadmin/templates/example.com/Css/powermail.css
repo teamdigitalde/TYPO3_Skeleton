@@ -471,3 +471,11 @@ span.abc a {
 .powermail_frontend_export input.export_icon_xls {
   background-image: url('/typo3conf/ext/powermail/Resources/Public/Image/icon_xls.gif');
 }
+
+/* Fehlermeldungen Pflichtfelder */
+ul.parsley-errors-list, ul.parsley-errors-list li{
+	list-style: none;
+	color: #FF0000;
+	font-style:oblique;
+	margin-left: 0em;
+	}
