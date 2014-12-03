@@ -3,12 +3,13 @@ page.meta {
   description.field = description
   author.field = author
   keywords.field = keywords
+  viewport = width=device-width, initial-scale=1.0
   robots = INDEX,FOLLOW
 	google-site-verification.cObject = TEXT
 	google-site-verification.cObject {
     value = {$meta.google-site-verification.value}
     if.isTrue = {$meta.google-site-verification.active}
-	}
+  }
 }
 
 [applicationContext = Development]
