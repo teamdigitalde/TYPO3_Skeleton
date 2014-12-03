@@ -473,9 +473,12 @@ span.abc a {
 }
 
 /* Fehlermeldungen Pflichtfelder */
+/* Text */
 ul.parsley-errors-list, ul.parsley-errors-list li{
 	list-style: none;
 	color: #FF0000;
 	font-style:oblique;
 	margin-left: 0em;
 	}
+/* Feld */
+.parsley-error {border: 1px solid #F00;}
