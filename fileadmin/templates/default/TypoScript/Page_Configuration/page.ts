@@ -20,11 +20,11 @@ page {
 			key.data = levelfield:-1, backend_layout_next_level, slide
 			key.override.field = backend_layout
 			default = TEXT
-			default.value = {$filepaths.templates}Templates/layout1.html
+			default.value = {$filepaths.templates}Templates/Layout1.html
 			2 = TEXT
-			2.value = {$filepaths.templates}Templates/layout2.html
+			2.value = {$filepaths.templates}Templates/Layout2.html
 			3 = TEXT
-			3.value = {$filepaths.templates}Templates/layout3.html
+			3.value = {$filepaths.templates}Templates/Layout3.html
 		}
 		
 		# fill the subparts and markers
