@@ -110,7 +110,6 @@ RTE.default.buttons.pastetoggle.setActiveOnRteOpen = 1
 
 RTE.default {
 	contentCSS = fileadmin/templates/example.de/Css/rte.css
-	showTagFreeClasses = 1
 	showButtons = *
 	hideButtons = textindicator, user, fontstyle, fontsize,  inserttag, strikethrough,lefttoright, righttoleft, textcolor, bgcolor, underline, emoticon, spellcheck,  justifyfull, subscript, superscript, copy, cut, paste, findreplace, about, showhelp,blockquote, insertparagraphbefore, insertparagraphafter, lefttoright, righttoleft, language,showlanguagemarks,definitionlist, definitionitem,editelement, showmicrodata, insertsofthyphen
 	keepButtonGroupTogether = 1
