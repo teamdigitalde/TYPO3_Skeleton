@@ -62,11 +62,30 @@ hr {
     margin: 16px 0px 18px;
     height: 0px;
 }
+
+/* Navigation Pipelist */
+.topmenue a{text-decoration: none; color: #242424;}
+.topmenue a:hover {text-decoration: none; color: #242424;}
+.topmenue li{display: inline; color: #242424; }
+.topmenue li:before{content: " | ";}
+.topmenue li:first-child:before{content: "";}
+/* Naigation Pipelist Ende */
+
+div[role="main"] {
+    margin-bottom: 3em;
+}
 .maincontent ul, .maincontent ol {
     margin-left: 2em;
 }
 .maincontent li {
     list-style: disc;
+}
+
+footer.pagefooter {
+	padding: 0 1em;
+    color: #FFF;
+    line-height: 1em;
+    font-size: 1em;
 }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
@@ -342,4 +361,10 @@ hr {
 		background-image: url(../Resources/Images/fancybox_loading@2x.gif);
 		background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
 	}
+}
+
+/* Mobil */
+
+@media only screen and (max-width: 767px) {
+	
 }
