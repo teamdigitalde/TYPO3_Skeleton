@@ -4,7 +4,7 @@ page.meta {
   author.field = author
   keywords.field = keywords
   viewport = width=device-width, initial-scale=1.0
-  robots = INDEX,FOLLOW
+  robots = INDEX,FOLLOW,NOODP
 	google-site-verification.cObject = TEXT
 	google-site-verification.cObject {
     value = {$meta.google-site-verification.value}

@@ -19,3 +19,6 @@ tt_content.stdWrap.innerWrap.cObject {
   200 =< tt_content.stdWrap.innerWrap.cObject.default
   200.20.10.value = sprechblase
 }
+
+### Dateiliste Größenangaben ###
+tt_content.uploads.20.renderObj.40.bytes.labels = Byte | kB | MB | GB
