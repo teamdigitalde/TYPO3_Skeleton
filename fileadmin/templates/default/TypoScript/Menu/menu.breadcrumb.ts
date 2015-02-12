@@ -1,7 +1,7 @@
 # For the breadcrumb cObject we use a HMENU of the type 'rootline'
 menu.breadcrumb = COA
 menu.breadcrumb.10 = TEXT
-menu.breadcrumb.10.value = <p id="breadcrumblabel">Sie sind hier:</p>
+menu.breadcrumb.10.value = <span id="breadcrumblabel">Sie sind hier:</span>
 menu.breadcrumb.20 = HMENU
 menu.breadcrumb.20 {
   special = rootline
