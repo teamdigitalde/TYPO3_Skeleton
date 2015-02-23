@@ -95,7 +95,7 @@ config {
 	compressJs = 0
 	headerComment (
 ———————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-| TYPO3 Webdesign und Extbase Programmierung by team digital GmbH © 2014 www.team-digital.de - Alle Rechte vorbehalten.  |
+| TYPO3 Webdesign und Extbase Programmierung by team digital GmbH - www.team-digital.de - Alle Rechte vorbehalten.  |
 ———————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
   )
 }
@@ -123,3 +123,20 @@ config {
   locale_all = en_GB
 }
 [global]
+
+[applicationContext = Development*]
+  config {
+	  no_cache = 1
+	  tx_realurl_enable = 0
+	  concatenateCss = 0
+	  concatenateJs = 0
+	  compressCss = 0
+	  compressJs = 0
+	  headerComment (
+———————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+| TYPO3 Webdesign und Extbase Programmierung by team digital GmbH - www.team-digital.de - Alle Rechte vorbehalten.
+| DEVELOPMENT
+———————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	)
+  }
+[end]
