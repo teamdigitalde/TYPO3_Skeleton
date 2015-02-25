@@ -68,7 +68,6 @@ div.powermail_fieldwrap {
   clear: both;
 }
 .powermail_field {
-  font-family: Calibri, Arial, sans-serif;
   font-size: 14px;
   width: 400px;
   padding: 3px;
@@ -238,9 +237,6 @@ dl.powermail_all dd {
  * JS Form Validation
  */
 
-
-
-
 /* Z-INDEX */
 .formError { z-index: 990; }
 .formError .formErrorContent { z-index: 991; }
@@ -253,7 +249,6 @@ dl.powermail_all dd {
   float: left;
 }
 .formError {
-  font-family: Calibri, Arial, sans-serif;
   position: absolute;
   top: 300px;
   left: 300px;
@@ -482,3 +477,9 @@ ul.parsley-errors-list, ul.parsley-errors-list li{
 	}
 /* Feld */
 .parsley-error {border: 1px solid #F00;}
+
+
+@media only screen and (max-width: 767px) {
+	.powermail_field, .powermail_label { width: 100%;}
+	.powermail_submit {margin: 10px 0px 10px 0px;}
+	}
