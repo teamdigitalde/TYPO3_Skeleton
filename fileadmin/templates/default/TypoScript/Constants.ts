@@ -82,6 +82,9 @@ styles.content.imgtext.linkWrap {
     lightboxCssClass = fancybox
 }
 
+tt_content.image.20.1.imageLinkWrap.height =
+tt_content.image.20.1.imageLinkWrap.width =
+
 # some domainspecific values
 meta {
 	google-site-verification {
