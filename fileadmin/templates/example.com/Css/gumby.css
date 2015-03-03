@@ -348,7 +348,7 @@ abbr { text-transform: none; }
 
 .row .pull_one.eleven.columns, .row .pull_two.ten.columns, .row .pull_three.nine.columns, .row .pull_four.eight.columns, .row .pull_five.seven.columns, .row .pull_six.six.columns, .row .pull_seven.five.columns, .row .pull_eight.four.columns, .row .pull_nine.three.columns, .row .pull_ten.two.columns, .row .pull_eleven.one.columns { margin-left: -100%; }
 
-img, object, embed { max-width: 100%; height: auto; }
+img, object, embed, video { max-width: 100%; height: auto; }
 
 img { -ms-interpolation-mode: bicubic; }
 
