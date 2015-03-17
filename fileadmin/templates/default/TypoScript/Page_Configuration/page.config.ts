@@ -107,13 +107,6 @@ config.absRefPrefix = http://{$config.domain}/
 config.absRefPrefix = https://{$config.domain}/
 [global]
 
-// Condition to switch the doctype and xml prologue
-[browser = msie] && [version = <7]
-config {
-  doctypeSwitch = 1
-}
-[global]
-
 // Condition to set language according to L POST/GET variable
 [globalVar = GP:L = 1]
 config {
