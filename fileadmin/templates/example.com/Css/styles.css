@@ -77,8 +77,11 @@ div[role="main"] {
 .maincontent ul, .maincontent ol {
     margin-left: 2em;
 }
-.maincontent li {
+.maincontent ul li {
     list-style: disc;
+}
+.maincontent ol li {
+    list-style-type: decimal;
 }
 
 footer.pagefooter {
