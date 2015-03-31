@@ -1,3 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 
+a[href^="javascript:"]:after, a[href^="#"]:after {display: none;}
+
+.row .one.columns, 
+.row .two.columns, 
+.row .three.columns, 
+.row .four.columns, 
+.row .five.columns, 
+.row .six.columns, 
+.row .seven.columns, 
+.row .eight.columns, 
+.row .nine.columns, 
+.row .ten.columns {
+    width: 100%;
+}
+
