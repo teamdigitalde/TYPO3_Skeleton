@@ -14,12 +14,11 @@ page {
     }
   }
   includeJSFooterlibs {
-    powermailValidationEngine = EXT:powermail/Resources/Public/Js/jquery.validationEngine.js
-    powermailValidationEngineEn = EXT:powermail/Resources/Public/Js/jquery.validationEngine-en.js
-	fancybox = {$filepaths.scripts}libs/jquery.fancybox.pack.js
+
   }
   includeJSFooter {
-  #  plugins = {$filepaths.scripts}plugins.js
+    fancybox = {$filepaths.scripts}libs/jquery.fancybox.pack.js
+    #plugins = {$filepaths.scripts}plugins.js
     main = {$filepaths.scripts}main.js
   }
 }
