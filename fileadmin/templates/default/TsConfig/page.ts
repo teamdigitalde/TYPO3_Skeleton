@@ -114,7 +114,13 @@ RTE.default {
 	hideButtons = textindicator, user, fontstyle, fontsize,  inserttag, strikethrough,lefttoright, righttoleft, textcolor, bgcolor, underline, emoticon, spellcheck,  justifyfull, subscript, superscript, copy, cut, paste, findreplace, about, showhelp,blockquote, insertparagraphbefore, insertparagraphafter, lefttoright, righttoleft, language,showlanguagemarks,definitionlist, definitionitem,editelement, showmicrodata, insertsofthyphen
 	keepButtonGroupTogether = 1
 	buttons { 
-		image.options.removeItems = magic,dragdrop
+		image.options {
+			# remove magic and dragdrop images
+			removeItems = magic,dragdrop
+			# set new filesize for images in RTE
+			magic.maxWidth = 1000
+			plain.maxWidth = 1000
+		}
 		formatblock.removeItems = ADDRESS, PRE, DIV, FOOTER, SECTION, ASIDE, BLOCKQUOTE, ARTICLE, HEADER, NAV 
 		textstyle.tags.span.allowedClasses := addToList(kleiner, groesser-125, groesser-150)
 		blockstyle.tags.div.allowedClasses := addToList()
