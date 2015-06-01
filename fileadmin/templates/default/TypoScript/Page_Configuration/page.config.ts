@@ -83,8 +83,6 @@ config {
       40.value = <!--[if IE 8]> <html class="no-js ie8 oldie"{register:tagEnd} <![endif]-->
       50 < .20
       50.value = <!--[if gt IE 8]> <!--><html class="no-js"{register:tagEnd} <!--<![endif]-->
-      60 < .20
-      60.value = <!--[if lt IE 9]><script src="fileadmin/html5shiv/dist/html5shiv.js"></script><![endif]-->
 
       90 = RESTORE_REGISTER
     }
