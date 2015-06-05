@@ -21,7 +21,7 @@ config {
   uniqueLinkVars          = 1
   linkVars                = L(1)
   sys_language_uid   = 0
-  sys_language_overlay   = 1
+  sys_language_overlay   = 0
   sys_language_mode   = content_fallback
   language           = de
   locale_all         = de_DE.UTF-8
