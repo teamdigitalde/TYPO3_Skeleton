@@ -55,6 +55,8 @@ h4, h5, h6 {
 .groesser-125 {font-size: 1.25em;}
 .groesser-150 {font-size: 1.5em;}
 
+.gridelement {padding-bottom: 1em;}
+
 hr {
     border: 0px;
     border-bottom: 1px solid #CCC;
