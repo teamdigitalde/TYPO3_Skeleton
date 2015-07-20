@@ -369,5 +369,8 @@ footer.pagefooter {
 /* Mobil */
 
 @media only screen and (max-width: 767px) {
-	
+	div.csc-textpic-intext-right .csc-textpic-imagewrap,
+	div.csc-textpic-intext-left .csc-textpic-imagewrap,
+	div.csc-textpic-intext-right-nowrap .csc-textpic-imagewrap,
+	div.csc-textpic-intext-left-nowrap .csc-textpic-imagewrap{float: none; margin-left: 0; margin-right: 0;}
 }
