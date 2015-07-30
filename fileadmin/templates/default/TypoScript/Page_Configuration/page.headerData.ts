@@ -57,53 +57,62 @@ lib.currentUrl {
 	}
 }
 
-
-lib.canonical = COA
+lib.canonical = TEXT
 lib.canonical {
-  10 = COA
-  10 {
-    10 < lib.currentUrl.10
-    wrap = <link rel="canonical" href="|" />
-  }
+	typolink {
+		parameter.cObject = COA
+		parameter.cObject {
+			10 = TEXT
+			10.data = TSFE:page|content_from_pid
+			10.if.isTrue.data = TSFE:page|content_from_pid
+			20 = TEXT
+			20.data = TSFE:id
+			20.if.isFalse.data = TSFE:page|content_from_pid
+		}
+		forceAbsoluteUrl = 1
+		returnLast = url
+		useCacheHash = 1
+		additionalParams < lib.currentUrl.10.typolink.additionalParams
+	}
+	wrap = <link rel="canonical" href="|" />
 }
 
 lib.hreflang = HMENU
 lib.hreflang {
-  special = language
-  special.value = 0,1,2
-  1 = TMENU
-  1 {
-    # Link zu nicht-aktiven Sprachen anzeigen
-    NO = 1
-    NO {
-      stdWrap.cObject = TEXT
-      stdWrap.cObject.value = de || en || fr
-      linkWrap = <link rel="alternate" hreflang="|
-      doNotLinkIt = 1
-      after.cObject = TEXT
-      after.cObject {
-        stdWrap {
-          wrap = " href="|" />
-          typolink {
-            parameter.data = TSFE:id
-            additionalParams = &L=0 || &L=1 || &L=2
-            returnLast = url
-            forceAbsoluteUrl = 0
-            addQueryString = 1
-            addQueryString.method = GET
-            addQueryString.exclude = cHash,backPid
-          }
-        }
-      }
-    }
-    # Link zur gerade aktiven Sprache NICHT anzeigen
-    #ACT = 1
-    #ACT.doNotShowLink = 1
-    # Link zu fehlenden Übersetzungen NICHT anzeigen
-    USERDEF1 = 1
-    USERDEF1.doNotShowLink = 1
-  }
-  if.isTrue = {$headerData.hreflang.active}
+	special = language
+	special.value = 0,1,2
+	1 = TMENU
+	1 {
+		# Link zu nicht-aktiven Sprachen anzeigen
+		NO = 1
+		NO {
+			stdWrap.cObject = TEXT
+			stdWrap.cObject.value = de || en || fr
+			linkWrap = <link rel="alternate" hreflang="|
+			doNotLinkIt = 1
+			after.cObject = TEXT
+				after.cObject {
+				stdWrap {
+					wrap = " href="|" />
+					typolink {
+						parameter.data = TSFE:id
+						returnLast = url
+						forceAbsoluteUrl = 0
+						additionalParams < lib.currentUrl.10.typolink.additionalParams
+						additionalParams.cObject.10 = TEXT
+						additionalParams.cObject.10.value = &L=0 || &L=1 || &L=2
+					}
+				}
+			}
+		}
+		# Link zur gerade aktiven Sprache NICHT anzeigen
+		#ACT = 1
+		#ACT.doNotShowLink = 1
+		# Link zu fehlenden Übersetzungen NICHT anzeigen
+		USERDEF1 = 1
+		USERDEF1.doNotShowLink = 1
+	}
+	if.isTrue = {$headerData.hreflang.active}
 }
 
 page.headerData {	
