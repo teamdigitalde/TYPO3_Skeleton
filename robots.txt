@@ -1,2 +1,10 @@
 User-agent: *
 Disallow: /typo3/
+Disallow: /piwik/
+
+#Googlebot 
+User-agent: Googlebot 
+Allow: *.css 
+Allow: *.js
+
+#Sitemap: http://www.example.com/sitemap.xml
