@@ -19,6 +19,18 @@ mod.SHARED.defaultLanguageFlag = de
 # Show the content element wizard with tabs (for consistency)
 mod.wizards.newContentElement.renderMode = tabs
 
+# Bild und Spalten -> Text mit Bild
+# Bildposition "Oben links"
+mod.wizards.newContentElement.wizardItems.common.elements.textpic.tt_content_defValues.imageorient = 2
+# Anzahl der Spalten auf 1
+mod.wizards.newContentElement.wizardItems.common.elements.textpic.tt_content_defValues.imagecols = 0
+
+# Bild und Spalten -> Bild
+# Bildposition "Oben links"
+mod.wizards.newContentElement.wizardItems.common.elements.image.tt_content_defValues.imageorient = 2
+# Anzahl der Spalten auf 1
+mod.wizards.newContentElement.wizardItems.common.elements.image.tt_content_defValues.imagecols = 0
+
 TCEFORM {
 	pages {
 		layout {
