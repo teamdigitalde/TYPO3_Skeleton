@@ -11,15 +11,6 @@ p.align-center, td.align-center, th.align-center, h1.align-center, h2.align-cent
 p.align-right, td.align-right, th.align-right, h1.align-right, h2.align-right, h3.align-right, h4.align-right, h5.align-right, h6.align-right, div.align-right, address.align-right { text-align: right; }
 p.align-justify, td.align-justify, th.align-justify, h1.align-justify, h2.align-justify, h3.align-justify, h4.align-justify, h5.align-justify, h6.align-justify, div.align-justify, address.align-justify { text-align: justify; }
 
-/* Two frame examples taken from the example CSS file of CSS Styled Content extension and applied to p and table block elements.*/
-p.csc-frame-frame1, table.csc-frame-frame1 { background-color: #EDEBF1; padding: 2px 4px 2px 4px; border: 1px solid #333333; }
-p.csc-frame-frame2, table.csc-frame-frame2 { background-color: #F5FFAA; padding: 2px 4px 2px 4px; border: 1px solid #333333; }
-
-/* Three inline text colors taken from the color scheme of CSS Styled Content extension.*/
-span.important { color: #8A0020; }
-span.name-of-person { color: #10007B; }
-span.detail { color: #186900; }
-
 /* Selectors for the default configuration of the link accessibity feature.*/
 a.external-link {}
 a.external-link-new-window {}

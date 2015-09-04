@@ -3,7 +3,7 @@ menu {
     
   1 = TMENU
   1 {
-    wrap = <ul>|</ul>
+    wrap = <ul class="nav navbar-nav">|</ul>
     
     # Always unfold all sub-levels of the menu
     expAll = 1
@@ -29,8 +29,9 @@ menu {
     
     IFSUB = 1
     IFSUB < .NO
-    IFSUB.wrapItemAndSub = <li class="level1 first x{field:uid} subpfeil">|</li> |*| <li class="level1 x{field:uid} subpfeil">|</li> |*| <li class="level1 last x{field:uid} subpfeil">|</li>
+    IFSUB.wrapItemAndSub = <li class="level1 dropdown first x{field:uid} subpfeil">|</li> |*| <li class="level1 dropdown x{field:uid} subpfeil">|</li> |*| <li class="level1 dropdown last x{field:uid} subpfeil">|</li>
     IFSUB.wrapItemAndSub.insertData = 1
+	IFSUB.ATagParams = class="dropdown-toogle" data-toogle="dropdown"
   
     # Copy properties of normal to active state, and then add a CSS class for styling
     ACT < .NO
