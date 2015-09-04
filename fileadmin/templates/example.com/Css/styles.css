@@ -6,39 +6,56 @@
 # ***************************************************************************************/
 
 /* Left, center, right and justify alignment of text in block elements*/
-p.align-left, td.align-left, th.align-left, h1.align-left, h2.align-left, h3.align-left, h4.align-left, h5.align-left, h6.align-left, div.align-left, address.align-left { text-align: left; }
-p.align-center, td.align-center, th.align-center, h1.align-center, h2.align-center, h3.align-center, h4.align-center, h5.align-center, h6.align-center, div.align-center, address.align-center { text-align: center; }
-p.align-right, td.align-right, th.align-right, h1.align-right, h2.align-right, h3.align-right, h4.align-right, h5.align-right, h6.align-right, div.align-right, address.align-right { text-align: right; }
-p.align-justify, td.align-justify, th.align-justify, h1.align-justify, h2.align-justify, h3.align-justify, h4.align-justify, h5.align-justify, h6.align-justify, div.align-justify, address.align-justify { text-align: justify; }
-
-/* Two frame examples taken from the example CSS file of CSS Styled Content extension and applied to p and table block elements.*/
-p.csc-frame-frame1, table.csc-frame-frame1 { background-color: #EDEBF1; padding: 2px 4px 2px 4px; border: 1px solid #333333; }
-p.csc-frame-frame2, table.csc-frame-frame2 { background-color: #F5FFAA; padding: 2px 4px 2px 4px; border: 1px solid #333333; }
-
-/* Three inline text colors taken from the color scheme of CSS Styled Content extension.*/
-span.important { color: #8A0020; }
-span.name-of-person { color: #10007B; }
-span.detail { color: #186900; }
-
+p.align-left, td.align-left, th.align-left, h1.align-left, h2.align-left, h3.align-left, h4.align-left, h5.align-left, h6.align-left, div.align-left, address.align-left {
+	text-align: left;
+}
+p.align-center, td.align-center, th.align-center, h1.align-center, h2.align-center, h3.align-center, h4.align-center, h5.align-center, h6.align-center, div.align-center, address.align-center {
+	text-align: center;
+}
+p.align-right, td.align-right, th.align-right, h1.align-right, h2.align-right, h3.align-right, h4.align-right, h5.align-right, h6.align-right, div.align-right, address.align-right {
+	text-align: right;
+}
+p.align-justify, td.align-justify, th.align-justify, h1.align-justify, h2.align-justify, h3.align-justify, h4.align-justify, h5.align-justify, h6.align-justify, div.align-justify, address.align-justify {
+	text-align: justify;
+}
 /* Selectors for the default configuration of the link accessibity feature.*/
-a.external-link {}
-a.external-link-new-window {}
-a.internal-link {}
-a.internal-link-new-window {}
-a.download {}
-a.mail {}
-
+a.external-link {
+}
+a.external-link-new-window {
+}
+a.internal-link {
+}
+a.internal-link-new-window {
+}
+a.download {
+}
+a.mail {
+}
 /* Default selector for indentation.*/
-div.indent { margin-left: 2em; }
-
-
+div.indent {
+	margin-left: 2em;
+}
 /* Benutzerdefinierte Style */
 
-h1 {
-	font-size: 22px;
-	font-size: 1.375rem;
+html {
+	font-size: 16px;
 }
-h2, h3 {
+body {
+	font-size: 16px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+}
+
+h1 {
+	font-size: 24px;
+	font-size: 1.5rem;
+}
+h2 {
+	font-size: 20px;
+	font-size: 1.25em;
+}
+h3 {
 	font-size: 18px;
 	font-size: 1.125em;
 }
@@ -48,132 +65,126 @@ h4, h5, h6 {
 }
 .fauxHeadline {
 	font-size: 18px;
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 }
-
-.kleiner {font-size: .9em;}
-.groesser-125 {font-size: 1.25em;}
-.groesser-150 {font-size: 1.5em;}
-
-.gridelement {padding-bottom: 1em;}
-
+.kleiner {
+	font-size: .9em;
+}
+.groesser-125 {
+	font-size: 1.25em;
+}
+.groesser-150 {
+	font-size: 1.5em;
+}
+.gridelement {
+	padding-bottom: 1em;
+}
 hr {
-    border: 0px;
-    border-bottom: 1px solid #CCC;
-    clear: both;
-    margin: 16px 0px 18px;
-    height: 0px;
+	border: 0px;
+	border-bottom: 1px solid #CCC;
+	clear: both;
+	margin: 16px 0px 18px;
+	height: 0px;
 }
-
 /* Navigation Pipelist */
-.topmenue a{text-decoration: none; color: #242424;}
-.topmenue a:hover {text-decoration: none; color: #242424;}
-.topmenue li{display: inline; color: #242424; }
-.topmenue li:before{content: " | ";}
-.topmenue li:first-child:before{content: "";}
+.topmenue a {
+	text-decoration: none;
+	color: #242424;
+}
+.topmenue a:hover {
+	text-decoration: none;
+	color: #242424;
+}
+.topmenue li {
+	display: inline;
+	color: #242424;
+}
+.topmenue li:before {
+	content: " | ";
+}
+.topmenue li:first-child:before {
+	content: "";
+}
 /* Naigation Pipelist Ende */
 
 div[role="main"] {
-    margin-bottom: 3em;
+	margin-bottom: 3em;
 }
 .maincontent ul, .maincontent ol {
-    margin-left: 2em;
+	margin-left: 2em;
 }
 .maincontent ul li {
-    list-style: disc;
+	list-style: disc;
 }
 .maincontent ol li {
-    list-style-type: decimal;
+	list-style-type: decimal;
 }
-
 footer.pagefooter {
-	padding: 0 1em;
-    color: #FFF;
-    line-height: 1em;
-    font-size: 1em;
+	padding: 1em 0em;
+	color: #000;
+	background: #E1DEDE;
+	line-height: 1em;
+	font-size: 1em;
 }
-
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
-.fancybox-wrap,
-.fancybox-skin,
-.fancybox-outer,
-.fancybox-inner,
-.fancybox-image,
-.fancybox-wrap iframe,
-.fancybox-wrap object,
-.fancybox-nav,
-.fancybox-nav span,
-.fancybox-tmp
-{
+.fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp {
 	padding: 0;
 	margin: 0;
 	border: 0;
 	outline: none;
 	vertical-align: top;
 }
-
 .fancybox-wrap {
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 8020;
 }
-
 .fancybox-skin {
 	position: relative;
 	background: #f9f9f9;
 	color: #444;
 	text-shadow: none;
 	-webkit-border-radius: 4px;
-	   -moz-border-radius: 4px;
-	        border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
-
 .fancybox-opened {
 	z-index: 8030;
 }
-
 .fancybox-opened .fancybox-skin {
 	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
-
 .fancybox-outer, .fancybox-inner {
 	position: relative;
 }
-
 .fancybox-inner {
 	overflow: hidden;
 }
-
 .fancybox-type-iframe .fancybox-inner {
 	-webkit-overflow-scrolling: touch;
 }
-
 .fancybox-error {
 	color: #444;
-	font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0;
 	padding: 15px;
 	white-space: nowrap;
 }
-
 .fancybox-image, .fancybox-iframe {
 	display: block;
 	width: 100%;
 	height: 100%;
 }
-
 .fancybox-image {
 	max-width: 100%;
 	max-height: 100%;
 }
-
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
 	background-image: url(../Resources/Images/fancybox_sprite.png);
 }
-
 #fancybox-loading {
 	position: fixed;
 	top: 50%;
@@ -185,13 +196,11 @@ footer.pagefooter {
 	cursor: pointer;
 	z-index: 8060;
 }
-
 #fancybox-loading div {
 	width: 44px;
 	height: 44px;
 	background: url(../Resources/Images/fancybox_loading.gif) center center no-repeat;
 }
-
 .fancybox-close {
 	position: absolute;
 	top: -18px;
@@ -201,7 +210,6 @@ footer.pagefooter {
 	cursor: pointer;
 	z-index: 8040;
 }
-
 .fancybox-nav {
 	position: absolute;
 	top: 0;
@@ -213,15 +221,12 @@ footer.pagefooter {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	z-index: 8040;
 }
-
 .fancybox-prev {
 	left: 0;
 }
-
 .fancybox-next {
 	right: 0;
 }
-
 .fancybox-nav span {
 	position: absolute;
 	top: 50%;
@@ -232,21 +237,17 @@ footer.pagefooter {
 	z-index: 8040;
 	visibility: hidden;
 }
-
 .fancybox-prev span {
 	left: 10px;
 	background-position: 0 -36px;
 }
-
 .fancybox-next span {
 	right: 10px;
 	background-position: 0 -72px;
 }
-
 .fancybox-nav:hover span {
 	visibility: visible;
 }
-
 .fancybox-tmp {
 	position: absolute;
 	top: -99999px;
@@ -256,22 +257,18 @@ footer.pagefooter {
 	max-height: 99999px;
 	overflow: visible !important;
 }
-
 /* Overlay helper */
 
 .fancybox-lock {
-    overflow: hidden !important;
-    width: auto;
+	overflow: hidden !important;
+	width: auto;
 }
-
 .fancybox-lock body {
-    overflow: hidden !important;
+	overflow: hidden !important;
 }
-
 .fancybox-lock-test {
-    overflow-y: hidden !important;
+	overflow-y: hidden !important;
 }
-
 .fancybox-overlay {
 	position: absolute;
 	top: 0;
@@ -281,32 +278,27 @@ footer.pagefooter {
 	z-index: 8010;
 	background: url(../Resources/Images/fancybox_overlay.png);
 }
-
 .fancybox-overlay-fixed {
 	position: fixed;
 	bottom: 0;
 	right: 0;
 }
-
 .fancybox-lock .fancybox-overlay {
 	overflow: auto;
 	overflow-y: scroll;
 }
-
 /* Title helper */
 
 .fancybox-title {
 	visibility: hidden;
-	font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	position: relative;
 	text-shadow: none;
 	z-index: 8050;
 }
-
 .fancybox-opened .fancybox-title {
 	visibility: visible;
 }
-
 .fancybox-title-float-wrap {
 	position: absolute;
 	bottom: 0;
@@ -315,7 +307,6 @@ footer.pagefooter {
 	z-index: 8050;
 	text-align: center;
 }
-
 .fancybox-title-float-wrap .child {
 	display: inline-block;
 	margin-right: -100%;
@@ -323,25 +314,22 @@ footer.pagefooter {
 	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
 	background: rgba(0, 0, 0, 0.8);
 	-webkit-border-radius: 15px;
-	   -moz-border-radius: 15px;
-	        border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 	text-shadow: 0 1px 2px #222;
 	color: #FFF;
 	font-weight: bold;
 	line-height: 24px;
 	white-space: nowrap;
 }
-
 .fancybox-title-outside-wrap {
 	position: relative;
 	margin-top: 10px;
 	color: #fff;
 }
-
 .fancybox-title-inside-wrap {
 	padding-top: 10px;
 }
-
 .fancybox-title-over-wrap {
 	position: absolute;
 	bottom: 0;
@@ -353,26 +341,23 @@ footer.pagefooter {
 }
 
 /*Retina graphics!*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-	   only screen and (min--moz-device-pixel-ratio: 1.5),
-	   only screen and (min-device-pixel-ratio: 1.5){
-
-	#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-		background-image: url(../Resources/Images/fancybox_sprite@2x.png);
-		background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
-	}
-
-	#fancybox-loading div {
-		background-image: url(../Resources/Images/fancybox_loading@2x.gif);
-		background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
-	}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+	background-image: url(../Resources/Images/fancybox_sprite@2x.png);
+	background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
+}
+#fancybox-loading div {
+	background-image: url(../Resources/Images/fancybox_loading@2x.gif);
+	background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
+}
 }
 
 /* Mobil */
 
 @media only screen and (max-width: 767px) {
-	div.csc-textpic-intext-right .csc-textpic-imagewrap,
-	div.csc-textpic-intext-left .csc-textpic-imagewrap,
-	div.csc-textpic-intext-right-nowrap .csc-textpic-imagewrap,
-	div.csc-textpic-intext-left-nowrap .csc-textpic-imagewrap{float: none; margin-left: 0; margin-right: 0;}
+div.csc-textpic-intext-right .csc-textpic-imagewrap, div.csc-textpic-intext-left .csc-textpic-imagewrap, div.csc-textpic-intext-right-nowrap .csc-textpic-imagewrap, div.csc-textpic-intext-left-nowrap .csc-textpic-imagewrap {
+	float: none;
+	margin-left: 0;
+	margin-right: 0;
+}
 }

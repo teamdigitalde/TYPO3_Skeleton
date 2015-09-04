@@ -7,22 +7,31 @@ menu.firstAndSecondLevel < menu
 menu.firstAndSecondLevel {
   1 {
     expAll = 1
-    wrap = <ul class="twelve columns">|</ul>
-    #IFSUB < .NO
-    #IFSUB {
-    #  wrapItemAndSub = <li class="level1 first parent x{field:uid}">|</li> |*| <li class="level1 parent x{field:uid}">|</li> |*| <li class="level1 last parent x{field:uid}">|</li>
-    #  wrapItemAndSub.insertData = 1
-    #}
-    #ACTIFSUB < .IFSUB
-    #CURIFSUB < .IFSUB
-
+    wrap = <ul class="nav navbar-nav">|</ul>
+	IFSUB < .NO
+    IFSUB {
+      wrapItemAndSub = <li class="level1 dropdown first x{field:uid}">|</li> |*| <li class="level1 dropdown  x{field:uid}">|</li> |*| <li class="level1 last dropdown x{field:uid}">|</li>
+      wrapItemAndSub.insertData = 1
+	  ATagParams = class="dropdown-toggle" data-toggle="dropdown"
+    }
+    ACTIFSUB < .IFSUB
+    CURIFSUB < .IFSUB
   }
   
   # Copy the configuration of the first level of this menu to level 2
   2 < .1
+  2.wrap = <ul class="dropdown-menu">|</ul>
   2 {
     NO.wrapItemAndSub = <li class="level2 first x{field:uid}">|</li> |*| <li class="level2 x{field:uid}">|</li> |*| <li class="level2 last x{field:uid}">|</li>
     CUR.wrapItemAndSub = <li class="level2 first x{field:uid}">|</li> |*| <li class="level2 x{field:uid}">|</li> |*| <li class="level2 last x{field:uid}">|</li>
     ACT.wrapItemAndSub = <li class="level2 first x{field:uid}">|</li> |*| <li class="level2 x{field:uid}">|</li> |*| <li class="level2 last x{field:uid}">|</li>
+	IFSUB < .NO
+    IFSUB {
+      wrapItemAndSub = <li class="level2 dropdown-submenu first x{field:uid}">|</li> |*| <li class="level2 dropdown-submenu  x{field:uid}">|</li> |*| <li class="level2 last dropdown-submenu x{field:uid}">|</li>
+      wrapItemAndSub.insertData = 1
+	  ATagParams = class="dropdown-toggle" data-toggle="dropdown"
+    }
+    ACTIFSUB < .IFSUB
+    CURIFSUB < .IFSUB
   }
 }
