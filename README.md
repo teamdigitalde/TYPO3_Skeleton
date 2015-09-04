@@ -1,6 +1,8 @@
 TYPO3_Skeleton
 ==============
 
+This skeleton should be installed by our TYPO3 Installscript. Get it here: https://gist.github.com/h3nn3s/b773d97cfc8c8a670b8a
+
 Base skeleton for new TYPO3 projects featuring a directory structure and some base TypoScript files relevant for most of our projects
 
 To pull the current repository contents to the destination on webserver simply execute the following via ssh:
