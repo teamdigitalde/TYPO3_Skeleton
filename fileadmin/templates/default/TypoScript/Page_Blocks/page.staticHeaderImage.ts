@@ -17,4 +17,32 @@ lib.staticHeaderImage {
   altText = Static Header Image
   stdWrap.typolink.parameter = 8
   stdWrap.typolink.title = Zurück zur Startseite
-} 
+}
+
+lib.headerImageFal = COA
+lib.headerImageFal {
+  10 = FILES
+  10 {
+    references{
+      data = levelmedia:-1, slide
+      #data = media
+      treatIdAsReference = 1
+    }
+    renderObj = COA
+    renderObj {
+      10 = IMAGE
+      10 {
+        file {
+          import.data = file:current:originalUid // file:current:uid
+          width.field = imagewidth
+          width.wrap = |m
+          height.field = imageheight
+          height.wrap = |m
+        }
+        titleText.data = file:current:title // file:current:alternative
+        altText.data = file:current:alternative // file:current:title
+      }
+      stdWrap.wrap =|
+    }
+  }
+}
