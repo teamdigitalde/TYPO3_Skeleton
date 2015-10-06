@@ -2,8 +2,8 @@
 	<div class="row top">
 		<div class="twelve columns">
 			<div id="logo">
-				<f:link.page pageUid="1" additionalAttributes="{title:'Zurück zur Startseite'}">
-					<f:image src="fileadmin/templates/example.com/Resources/Images/logo.png" width="250" height="74" alt="Logo" additionalAttributes="{class:'logo'}"></f:image>
+				<f:link.page pageUid="1" title="Zurück zur Startseite">
+					<f:image src="fileadmin/templates/example.com/Resources/Images/logo.png" width="250" height="74" alt="Logo" class="logo"></f:image>
 				</f:link.page>
 			</div>
 		</div>
@@ -17,13 +17,13 @@
 </div>
 <div role="main" class="row">
 	<div class="row" id="content">
-		<f:if condition="{0:layoutclass} == {0:'layout1'}">
+		<f:if condition="{layoutclass} == 'layout1'">
 			<f:render section="Layout1" />
 		</f:if>
-		<f:if condition="{0:layoutclass} == {0:'layout2'}">
+		<f:if condition="{layoutclass} == 'layout2'">
 			<f:render section="Layout2" />
 		</f:if>
-		<f:if condition="{0:layoutclass} == {0:'layout3'}">
+		<f:if condition="{layoutclass} == 'layout3'">
 			<f:render section="Layout3" />
 		</f:if>
 	</div>
@@ -31,7 +31,7 @@
 <footer class="pagefooter">
 	<div class="row">
 		<div class="twelve columns">
-			<p>Footer</p>
+			<p>&copy; <f:format.date format="Y">+1 second</f:format.date> ACME</p>
 		</div>
 	</div>
 </footer>

@@ -115,7 +115,7 @@ lib.hreflang {
 	if.isTrue = {$headerData.hreflang.active}
 }
 
-page.headerData {	
+page.headerData {
 	#40 = TEXT
 	#40.value = <link rel="apple-touch-icon" href="http://deinedomain.de/fileadmin/templates/fileadmin/templates/img/apple-touch-icon-144x144-precomposed.png" />
 
