@@ -12,6 +12,7 @@ lib.staticHeaderImage {
     }
     width = 682c
     height = 257c
+    treatIdAsReference = 1
   }
   altText = Static Header Image
   stdWrap.typolink.parameter = 8
