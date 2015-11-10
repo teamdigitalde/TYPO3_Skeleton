@@ -1,0 +1,13 @@
+img {max-width: 100%;height: auto;}
+.navbar span.dropdown-toggle {
+	position: absolute;
+	right: 0;
+	height: 40px;
+	line-height: 40px;
+	width: 40px;
+	top: 0;
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.navbar span.dropdown-toggle {display: none;}
+}
