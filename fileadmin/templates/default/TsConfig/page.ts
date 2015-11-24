@@ -72,12 +72,12 @@ TCEMAIN {
 // better wording for header layouts
 TCEFORM.tt_content.header_layout {
   altLabels {
-    1 = LLL:EXT:rtehtmlarea/locallang.xml:Heading 1
-    2 = LLL:EXT:rtehtmlarea/locallang.xml:Heading 2
-    3 = LLL:EXT:rtehtmlarea/locallang.xml:Heading 3
-    4 = LLL:EXT:rtehtmlarea/locallang.xml:Heading 4
-    5 = LLL:EXT:rtehtmlarea/locallang.xml:Heading 5
-    6 = LLL:EXT:rtehtmlarea/locallang.xml:Heading 6
+    1 = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang.xlf:Heading 1
+    2 = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang.xlf:Heading 2
+    3 = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang.xlf:Heading 3
+    4 = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang.xlf:Heading 4
+    5 = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang.xlf:Heading 5
+    6 = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang.xlf:Heading 6
   }
   removeItems = 0
   addItems.200 = Überschrift ohne H-Tag
