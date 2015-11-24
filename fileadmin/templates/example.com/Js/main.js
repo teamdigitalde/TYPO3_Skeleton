@@ -13,3 +13,38 @@ $('.navbar .dropdown').hover(function() {
 });
 */
 
+// Show ToTop-Icon only if scrolled a little bit down
+var showed = false;
+var scrollTop = 0;
+function jumpToElement(elem) {
+    if( elem.length ) {
+        $('html, body').animate({
+            scrollTop: $(elem).offset().top}, {
+            duration: 1000,
+            complete: function(){
+                hideToTop();
+            }
+        });
+
+    }
+}
+window.onscroll = function() {
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrollTop > 500) {
+        if(!showed) {
+            showToTop();
+        }
+    } else {
+        if(showed) {
+            hideToTop();
+        }
+    }
+};
+function hideToTop() {
+    $( "div.totop" ).hide( "slow");
+    showed = false;
+}
+function showToTop() {
+    $( "div.totop" ).show( "slow");
+    showed = true;
+}

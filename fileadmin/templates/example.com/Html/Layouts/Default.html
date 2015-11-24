@@ -1,37 +1,41 @@
-<header>
-	<div class="row top">
-		<div class="twelve columns">
-			<div id="logo">
-				<f:link.page pageUid="1" additionalAttributes="{title:'Zurück zur Startseite'}">
-					<f:image src="fileadmin/templates/example.com/Resources/Images/logo.png" width="250" height="74" alt="Logo" additionalAttributes="{class:'logo'}"></f:image>
-				</f:link.page>
-			</div>
-		</div>
+<header class="container page-header">
+	<div id="logo">
+		<f:link.page pageUid="1" title="Zurück zur Startseite">
+			<f:image src="fileadmin/templates/example.com/Resources/Images/logo.png" width="250" height="74" alt="Logo" class="logo"></f:image>
+		</f:link.page>
 	</div>
-</header>
-<div class="row navbar">
-	<nav class="row " id="nav1">
-		<a class="toggle" data-trigger="#nav1 #menu" href="#"><i class="icon-menu"></i></a>
-		<f:format.html parseFuncTSPath="">{mainMenu}</f:format.html>
+	<nav class="navbar navbar-default " id="nav1">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<f:link.page pageUid="1" title="Zurück zur Startseite" class="navbar-brand">
+				<f:image src="fileadmin/templates/example.com/Resources/Images/logo.png" height="80" alt="Logo" class="logo"></f:image>
+			</f:link.page>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<f:format.html parseFuncTSPath="">{mainMenu}</f:format.html>
+		</div>
 	</nav>
-</div>
-<div role="main" class="row">
+</header>
+<div role="main" class="container">
 	<div class="row" id="content">
-		<f:if condition="{0:layoutclass} == {0:'layout1'}">
+		<f:if condition="{layoutclass} == 'layout1'">
 			<f:render section="Layout1" />
 		</f:if>
-		<f:if condition="{0:layoutclass} == {0:'layout2'}">
+		<f:if condition="{layoutclass} == 'layout2'">
 			<f:render section="Layout2" />
 		</f:if>
-		<f:if condition="{0:layoutclass} == {0:'layout3'}">
+		<f:if condition="{layoutclass} == 'layout3'">
 			<f:render section="Layout3" />
 		</f:if>
 	</div>
 </div>
-<footer class="pagefooter">
-	<div class="row">
-		<div class="twelve columns">
-			<p>Footer</p>
-		</div>
-	</div>
+<footer class="pagefooter container">
+	<p>&copy; <f:format.date format="Y">+1 second</f:format.date> ACME</p>
 </footer>
+<div class="totop"><a href="javascript:jumpToElement('#nav1');">to top</a></div>

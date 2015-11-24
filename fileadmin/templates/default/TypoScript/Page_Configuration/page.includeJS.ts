@@ -1,6 +1,6 @@
 page {
   includeJSlibs {
-    modernizr = {$filepaths.scripts}libs/modernizr-2.6.2.min.js
+    modernizr = {$filepaths.scripts}libs/modernizr-3.2.0-custom.min.js
     #selectivizr = {filepaths.scripts}libs/selectivizr-min.js
     #selectivizr {
     #  allWrap = <!--[if (gte IE 6)&(lte IE 8)]>|<![endif]-->
@@ -17,8 +17,10 @@ page {
 
   }
   includeJSFooter {
+    bootstrap = {$filepaths.scripts}libs/bootstrap.min.js
+    # submenu doesn open on hover, open it instead with a click
+    #bootstrapSubmenu = {$filepaths.scripts}libs/bootstrap-submenu.min.js
     fancybox = {$filepaths.scripts}libs/jquery.fancybox.pack.js
-    #plugins = {$filepaths.scripts}plugins.js
     main = {$filepaths.scripts}main.js
   }
 }

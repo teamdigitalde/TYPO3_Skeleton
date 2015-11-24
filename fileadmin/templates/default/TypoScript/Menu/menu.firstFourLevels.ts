@@ -5,12 +5,13 @@ menu.firstFourLevels {
     wrap = <ul class="nav navbar-nav">|</ul>
 	IFSUB < .NO
     IFSUB {
-      wrapItemAndSub = <li class="level1 dropdown first x{field:uid}">|</li> |*| <li class="level1 dropdown  x{field:uid}">|</li> |*| <li class="level1 last dropdown x{field:uid}">|</li>
+      wrapItemAndSub = <li class="level1 dropdown first x{field:uid}">|<span class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></span></li> |*| <li class="level1 dropdown  x{field:uid}">|<span class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></span></li> |*| <li class="level1 last dropdown x{field:uid}">|<span class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></span></li>
       wrapItemAndSub.insertData = 1
-	  ATagParams = class="dropdown-toggle" data-toggle="dropdown"
     }
     ACTIFSUB < .IFSUB
-    CURIFSUB < .IFSUB
+    ACTIFSUB.ATagParams = class="active"
+    CURIFSUB < .ACTIFSUB
+    CURIFSUB.ATagParams = class="selected"
   }
   
   # Copy the configuration of the first level of this menu to level 2
