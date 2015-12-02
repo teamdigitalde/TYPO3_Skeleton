@@ -33,7 +33,7 @@ menu {
 styles.content {
   # This defines the maximum width of images inserted in content records of type Images or Text-with-images.
   # There are seperate settings for images floated next to text (..InText)
-  imgtext {
+  textmedia {
     maxW = 960
     maxWInText = 960
     borderThick = 1
@@ -76,7 +76,7 @@ plugin.meta.language = en
 
 
 # Lightbox
-styles.content.imgtext.linkWrap {
+styles.content.textmedia.linkWrap {
     lightboxEnabled = 1
     lightboxRelAttribute = lightbox{field:uid}
     lightboxCssClass = fancybox
