@@ -10,15 +10,24 @@ lib.renderCE {
   tables = tt_content
 }
 
-
-
-### zusätzliche rahmen ###
+# Neue Layouts Hinzufügen
+tt_content.stdWrap.innerWrap.cObject = CASE
 tt_content.stdWrap.innerWrap.cObject {
-  100 =< tt_content.stdWrap.innerWrap.cObject.default
-  100.20.10.value = kasten
-  200 =< tt_content.stdWrap.innerWrap.cObject.default
-  200.20.10.value = sprechblase
-}
+	key.field = layout
+	100 = TEXT
+	100.value = <div class="example1">|</div>
+	200 = TEXT
+	200.value = <div class="example2">|</div>
+    }
+
 
 ### Dateiliste Größenangaben ###
 tt_content.uploads.20.renderObj.40.bytes.labels = Byte | kB | MB | GB
+
+### Einbindung headerbild / Headerslider ###
+lib.headerslideshow < styles.content.get
+lib.headerslideshow {
+	select.where = colPos=3
+	stdWrap.required = 1
+	slide = -1
+	}
