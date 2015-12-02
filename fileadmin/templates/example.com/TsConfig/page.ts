@@ -50,12 +50,18 @@ TCEFORM {
 	}
 }
 
-# Neuen Rahmen hinzufügen, bestehende entfernen
-TCEFORM.tt_content.section_frame {
-     removeItems = 1,5,6,10,11,12,20,21
-     #addItems.100 = example
-     #altLabels.100 = example
+# Layouts hinzufügen, bestehende entfernen
+TCEFORM.tt_content {
+    layout {
+        altLabels {
+           # 1 = Beispiel 1
+           # 2 = Beispiel 2
+        }
+        # Bei Bedarf anpassen
+        removeItems = 1,2,3,4,5,6,7,9,10
+    }
 }
+
 
   // If an editor creates a page it should be visible to all editors and admins
 TCEMAIN {
