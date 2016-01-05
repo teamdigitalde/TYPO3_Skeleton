@@ -10,6 +10,8 @@ page.meta {
     value = {$meta.google-site-verification.value}
     if.isTrue = {$meta.google-site-verification.active}
   }
+  X-UA-Compatible = IE=edge,chrome=1
+  X-UA-Compatible.httpEquivalent = 1
 }
 
 [applicationContext = Development]
