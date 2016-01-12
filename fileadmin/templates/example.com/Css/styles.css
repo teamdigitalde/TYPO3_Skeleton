@@ -264,7 +264,7 @@ footer.pagefooter {
 	width: auto;
 }
 .fancybox-lock body {
-	overflow: hidden !important;
+	overflow: visible !important;
 }
 .fancybox-lock-test {
 	overflow-y: hidden !important;

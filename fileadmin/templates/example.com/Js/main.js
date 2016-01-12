@@ -30,7 +30,7 @@ function jumpToElement(elem) {
 }
 window.onscroll = function() {
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    if (scrollTop > 500) {
+    if (scrollTop > 400) {
         if(!showed) {
             showToTop();
         }
