@@ -30,6 +30,15 @@ menu {
   footer.pages = 6
 }
 
+styles.templates {
+  # cat=content/templates/b1; type=string; label= Path of Fluid Templates for all defined content elements
+  templateRootPath = fileadmin/templates/example.com/Html/FluidTemplates/Templates/
+  # cat=content/templates/b2; type=string; label= Path of Fluid Partials for all defined content elements
+  partialRootPath = fileadmin/templates/example.com/Html/FluidTemplates/Partials/
+  # cat=content/templates/b3; type=string; label= Path of Fluid Layouts for all defined content elements
+  layoutRootPath = fileadmin/templates/example.com/Html/FluidTemplates/Layouts/
+}
+
 styles.content {
   # This defines the maximum width of images inserted in content records of type Images or Text-with-images.
   # There are seperate settings for images floated next to text (..InText)

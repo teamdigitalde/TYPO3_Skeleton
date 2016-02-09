@@ -25,7 +25,7 @@ config {
   sys_language_mode   = content_fallback
   language           = de
   locale_all         = de_DE.UTF-8
-  htmlTag_langKey    = de
+  sys_language_isocode_default    = de
   typolinkEnableLinksAcrossDomains = 1
   
   // Link settings
@@ -108,7 +108,7 @@ config.absRefPrefix = https://{$config.domain}/
 // Condition to set language according to L POST/GET variable
 [globalVar = GP:L = 1]
 config {
-  htmlTag_langKey = en
+  sys_language_isocode = en
   sys_language_uid = 1
   language = en
   locale_all = en_GB
