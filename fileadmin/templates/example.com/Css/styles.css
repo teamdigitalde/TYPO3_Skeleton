@@ -86,6 +86,11 @@ hr {
 	margin: 16px 0px 18px;
 	height: 0px;
 }
+/* Chrome autofill entfernen */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #f8f8fa inset !important;
+}
+
 /* Navigation Pipelist */
 .topmenue a {
 	text-decoration: none;
