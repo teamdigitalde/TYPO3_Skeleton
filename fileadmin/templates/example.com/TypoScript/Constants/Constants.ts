@@ -40,13 +40,19 @@ styles.templates {
 }
 
 styles.content {
+  # Überschrift H1
+  defaultHeaderType = 1	
+  
   # This defines the maximum width of images inserted in content records of type Images or Text-with-images.
   # There are seperate settings for images floated next to text (..InText)
   textmedia {
     maxW = 960
     maxWInText = 960
-    borderThick = 1
+    borderWidth = 1
+    borderColor = #ccc
     linkWrap.newWindow = 1
+	linkWrap.width =
+	linkWrap.height =
   }
   uploads {
     jumpurl_secure = 1
@@ -90,9 +96,6 @@ styles.content.textmedia.linkWrap {
     lightboxRelAttribute = lightbox{field:uid}
     lightboxCssClass = fancybox
 }
-
-tt_content.image.20.1.imageLinkWrap.height =
-tt_content.image.20.1.imageLinkWrap.width =
 
 # some domainspecific values
 meta {
