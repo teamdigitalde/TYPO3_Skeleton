@@ -47,7 +47,7 @@ $tx_realurl_config = array(
 	),
 );
 
-$TYPO3_CONF_VARS['EXTCONF']['realurl'] = array(
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF'] = array(
 	'www.example.com' => $tx_realurl_config,
 
 /*	'_DOMAINS' => array(
@@ -74,5 +74,5 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl'] = array(
 		)
 	)*/
 );
-$TYPO3_CONF_VARS['EXTCONF']['realurl']['www.example.com']['pagePath']['rootpage_id'] = 1;
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['www.example.com']['pagePath']['rootpage_id'] = 1;
 ?>
