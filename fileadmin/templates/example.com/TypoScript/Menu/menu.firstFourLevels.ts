@@ -7,6 +7,7 @@ menu.firstFourLevels {
     IFSUB {
       wrapItemAndSub = <li class="level1 dropdown first x{field:uid}">|<span class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></span></li> |*| <li class="level1 dropdown  x{field:uid}">|<span class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></span></li> |*| <li class="level1 last dropdown x{field:uid}">|<span class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></span></li>
       wrapItemAndSub.insertData = 1
+	  ATagParams = class="dropdown-toggle" data-toggle="dropdown"
     }
     ACTIFSUB < .IFSUB
     ACTIFSUB.ATagParams = class="active"
