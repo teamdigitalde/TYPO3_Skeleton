@@ -5,3 +5,6 @@ lib.parseFunc_RTE {
     addAttributes.P.class.setOnly >
   }
 }
+
+# Tabellen Klasse anzeigen
+lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class.list := addToList(dieverwendeteklasse)
