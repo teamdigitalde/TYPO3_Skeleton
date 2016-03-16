@@ -53,6 +53,11 @@ TCEFORM {
 # Layouts hinzufügen, bestehende entfernen
 TCEFORM.tt_content {
     layout {
+		addItems {
+			#100 = Beispiel 100
+			#200 = Beispiel 200
+			}
+
         altLabels {
            # 1 = Beispiel 1
            # 2 = Beispiel 2
@@ -129,7 +134,7 @@ RTE.default.buttons.pastetoggle.setActiveOnRteOpen = 1
 RTE.default {
 	contentCSS = fileadmin/templates/example.com/Css/rte.css
 	showButtons = *
-	hideButtons = textindicator, user, fontstyle, fontsize,  inserttag, strikethrough,lefttoright, righttoleft, textcolor, bgcolor, underline, emoticon, spellcheck,  justifyfull, subscript, superscript, copy, cut, paste, findreplace, about, showhelp,blockquote, insertparagraphbefore, insertparagraphafter, lefttoright, righttoleft, language,showlanguagemarks,definitionlist, definitionitem,editelement, showmicrodata, insertsofthyphen
+	hideButtons = textindicator, user, fontstyle, fontsize, inserttag, strikethrough, lefttoright, righttoleft, textcolor, bgcolor, underline, emoticon, spellcheck,  justifyfull, copy, cut, paste, findreplace, about, showhelp, blockquote, insertparagraphbefore, insertparagraphafter, lefttoright, righttoleft, language, showlanguagemarks, definitionlist, definitionitem, editelement, showmicrodata, insertsofthyphen
 	keepButtonGroupTogether = 1
 	buttons { 
 		image.options {
