@@ -47,7 +47,7 @@ $tx_realurl_config = array(
 	),
 );
 
-$GLOBALS['TYPO3_CONF_VARS']['EXTCONF'] = array(
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl'] = array(
 	'www.example.com' => $tx_realurl_config,
 
 /*	'_DOMAINS' => array(
