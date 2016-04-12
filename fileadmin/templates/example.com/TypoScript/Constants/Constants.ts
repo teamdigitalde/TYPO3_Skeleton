@@ -110,4 +110,16 @@ meta {
 		position = 50.63;9.39
 	}
 }
-headerData.hreflang.active = 0
+headerData {
+  hreflang.active = 0
+  googleAnalytics {
+    active = 0
+    id = UA-123456789-1
+  }
+  piwik {
+    active = 0
+    site_id = 1
+    # be aware of leading and trailing slashes!
+    tracker_url = //piwik.example.com/
+  }
+}
