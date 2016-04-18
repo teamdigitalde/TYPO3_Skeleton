@@ -61,4 +61,7 @@ if (is_file($file)) {
     $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive($GLOBALS['TYPO3_CONF_VARS'], (array)$customChanges);
 }
 
+# userfunction for pageNotFound_handling
+# remember to edit the corresponding scrip!
+$GLOBALS['TYPO3_CONF_VARS']['FE']['pageNotFound_handling'] = 'USER_FUNCTION:fileadmin/pageNotFound.php:user_pageNotFound->pageNotFound';
 ?>
