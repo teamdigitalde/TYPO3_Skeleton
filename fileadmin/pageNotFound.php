@@ -2,7 +2,7 @@
 use TYPO3\CMS\Core\Utility\GeneralUtility;
  
 // Redirect to correct page on login failure
-// set: config ['FE']['pageNotFound_handling'] => 'USER_FUNCTION:fileadmin/pageNotFoundHandling.php:user_pageNotFound->pageNotFound',
+// set: config ['FE']['pageNotFound_handling'] => 'USER_FUNCTION:fileadmin/pageNotFound.php:user_pageNotFound->pageNotFound',
 
 define(LOGIN_URL, "http://www.example.com/loginlogout.html");
 define(LOGIN_URL_EN, "http://www.example.com/loginlogout.html");
