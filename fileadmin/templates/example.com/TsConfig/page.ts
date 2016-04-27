@@ -9,6 +9,9 @@ TCEFORM.pages.backend_layout_next_level.PAGE_TSCONFIG_ID = 13
 TCEMAIN.table.pages.disablePrependAtCopy = 1
 TCEMAIN.table.tt_content.disablePrependAtCopy = 1
 
+# Text -> Kopie einblenden
+TCEMAIN.table.tt_content.disableHideAtCopy = 1
+
 # Set the default label and flag
 mod.SHARED.defaultLanguageLabel = deutsch
 mod.SHARED.defaultLanguageFlag = de
