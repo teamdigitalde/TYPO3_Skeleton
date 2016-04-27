@@ -92,11 +92,15 @@ TCEFORM.tt_content.header_layout {
 }
 
 # Use different views for the news plugin, those entries show up in the news content element configuration
-tx_news.templateLayouts {
-	normal = Normal
-	latest = Latest
-	# You can even translate those if you create a custom ll-xml file.
-	#custom = fileadmin/Language/news-templates.xml:keyForCustom
+tx_news {
+	templateLayouts {
+		normal = Normal
+		latest = Latest
+		# You can even translate those if you create a custom ll-xml file.
+		#custom = fileadmin/Language/news-templates.xml:keyForCustom
+	}
+	# prefill author informations from user settigns
+	predefine.author = 1
 }
 
 #### RTE  ###
