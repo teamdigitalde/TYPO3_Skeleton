@@ -102,6 +102,13 @@ tx_news {
 	# prefill author informations from user settigns
 	predefine.author = 1
 }
+# set showInPreview flag for news as default
+TCAdefaults {
+	sys_file_reference {
+		showinpreview =  1
+	}
+}
+
 
 #### RTE  ###
 
