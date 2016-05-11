@@ -1,4 +1,6 @@
 config {
+  # Display error messages instead of an unreadable errorcode
+  #contentObjectExceptionHandler = 0
   // Administrator settings
   admPanel    = {$config.adminPanel}
   debug      = {$config.debug}
