@@ -4,10 +4,15 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 // Redirect to correct page on login failure
 // set: config ['FE']['pageNotFound_handling'] => 'USER_FUNCTION:fileadmin/pageNotFound.php:user_pageNotFound->pageNotFound',
 
-define(LOGIN_URL, "http://www.example.com/loginlogout.html");
-define(LOGIN_URL_EN, "http://www.example.com/loginlogout.html");
-define(NOTFOUND_URL, "http://www.example.com");
-define(NOTFOUND_URL_EN, "http://www.example.com");
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+define(HTTP_HOST, $_SERVER['HTTP_HOST']);
+define(HTTP_PROTOCOL, $protocol);
+
+//@todo define login and 404 - pid and use typolink functions
+define(LOGIN_URL, HTTP_PROTOCOL . HTTP_HOST. "/loginlogout.html");
+define(LOGIN_URL_EN, HTTP_PROTOCOL . HTTP_HOST. "/loginlogout.html");
+define(NOTFOUND_URL, HTTP_PROTOCOL . HTTP_HOST);
+define(NOTFOUND_URL_EN, HTTP_PROTOCOL . HTTP_HOST);
 
 class user_pageNotFound
 {
@@ -40,6 +45,9 @@ class user_pageNotFound
    
 		$c = curl_init();
 		curl_setopt($c, CURLOPT_URL, $url);
+		if (!empty($_SERVER['PHP_AUTH_USER']) && !empty($_SERVER['PHP_AUTH_PW'])) {
+			curl_setopt($c, CURLOPT_USERPWD, $_SERVER['PHP_AUTH_USER'] . ":" . $_SERVER['PHP_AUTH_PW']);
+		}
 		curl_setopt($c, CURLOPT_COOKIE, $strCookie);
 		$contents = curl_exec($c);
 		curl_close($c);
