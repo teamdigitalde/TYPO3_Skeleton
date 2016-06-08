@@ -116,8 +116,80 @@ lib.hreflang {
 }
 
 page.headerData {
-	#40 = TEXT
-	#40.value = <link rel="apple-touch-icon" href="http://deinedomain.de/fileadmin/templates/fileadmin/templates/img/apple-touch-icon-144x144-precomposed.png" />
+	40 = COA
+	40 {
+		// Apple touch icons
+		10 = IMG_RESOURCE
+		10 {
+			file = {$filepaths.images}favicon_256.png
+			file {
+				width = 57c
+				height = 57c
+			}
+			stdWrap.dataWrap = <link rel="apple-touch-icon" sizes="{TSFE:lastImgResourceInfo|0}x{TSFE:lastImgResourceInfo|1}" href="|">
+		}
+		20 < .10
+		20.file {
+			width = 76c
+			height = 76c
+		}
+		77 < .10
+		77.file {
+			width = 114c
+			height = 114c
+		}
+		78 < .10
+		78.file {
+			width = 152c
+			height = 152c
+		}
+		79 < .10
+		79.file {
+			width = 180c
+			height = 180c
+		}
+		// ...
+
+		// Android icons
+		80 < .10
+		80 {
+			file {
+				width = 16c
+				height = 16c
+			}
+			stdWrap.dataWrap = <link rel="icon" type="image/png" sizes="{TSFE:lastImgResourceInfo|0}x{TSFE:lastImgResourceInfo|1}" href="|">
+		}
+		81 < .80
+		81.file {
+			width = 32c
+			height = 32c
+		}
+		82 < .80
+		82.file {
+			width = 96c
+			height = 96c
+		}
+		83 < .80
+		83.file {
+			width = 160c
+			height = 160c
+		}
+		84 < .80
+		84.file {
+			width = 196c
+			height = 196c
+		}
+
+		// Microsoft Application icons
+		120 < .10
+		120 {
+			file {
+				width = 70c
+				height = 70c
+			}
+			stdWrap.dataWrap = <meta name="msapplication-square{TSFE:lastImgResourceInfo|0}x{TSFE:lastImgResourceInfo|1}logo" content="|"/>
+		}
+	}
 
 	45 = TEXT
 	45 {
