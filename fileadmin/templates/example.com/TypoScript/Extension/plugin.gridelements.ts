@@ -8,7 +8,7 @@ tt_content.gridelements_pi1.20.10.setup {
 	1 {
 		cObject = FLUIDTEMPLATE
 		cObject {
-			file = fileadmin/templates/example.com/Html/Gridelements/70-30.html
+			file = fileadmin/templates/example.com/Html/70-30.html
 		}
 	}
 	### 2spaltig Text 30/70
@@ -16,7 +16,7 @@ tt_content.gridelements_pi1.20.10.setup {
 	2 {
 		cObject = FLUIDTEMPLATE
 		cObject {
-			file = fileadmin/templates/example.com/Html/Gridelements/30-70.html
+			file = fileadmin/templates/example.com/Html/30-70.html
 		}
 	}
 	### 2spaltig Text 50/50
@@ -24,7 +24,7 @@ tt_content.gridelements_pi1.20.10.setup {
 	3 {
 		cObject = FLUIDTEMPLATE
 		cObject {
-			file = fileadmin/templates/example.com/Html/Gridelements/50-50.html
+			file = fileadmin/templates/example.com/Html/50-50.html
 		}
 	}
 	
@@ -33,7 +33,7 @@ tt_content.gridelements_pi1.20.10.setup {
 	4 {
 		cObject = FLUIDTEMPLATE
 		cObject {
-			file = fileadmin/templates/example.com/Html/Gridelements/33-33-33.html
+			file = fileadmin/templates/example.com/Html/33-33-33.html
 		}
 	}
 	### 4spaltig Text 25/25/25/25
@@ -41,7 +41,7 @@ tt_content.gridelements_pi1.20.10.setup {
 	5 {
 		cObject = FLUIDTEMPLATE
 		cObject {
-			file = fileadmin/templates/example.com/Html/Gridelements/25-25-25-25.html
+			file = fileadmin/templates/example.com/Html/25-25-25-25.html
 		}
 	}
 }

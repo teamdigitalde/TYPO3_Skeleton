@@ -30,13 +30,14 @@ menu {
   footer.pages = 6
 }
 
+# Pfad zu den Fluid Templates
 styles.templates {
   # cat=content/templates/b1; type=string; label= Path of Fluid Templates for all defined content elements
-  templateRootPath = fileadmin/templates/example.com/Html/FluidTemplates/Templates/
+  templateRootPath = fileadmin/templates/example.com/Html/Templates/
   # cat=content/templates/b2; type=string; label= Path of Fluid Partials for all defined content elements
-  partialRootPath = fileadmin/templates/example.com/Html/FluidTemplates/Partials/
+  partialRootPath = fileadmin/templates/example.com/Html/Partials/
   # cat=content/templates/b3; type=string; label= Path of Fluid Layouts for all defined content elements
-  layoutRootPath = fileadmin/templates/example.com/Html/FluidTemplates/Layouts/
+  layoutRootPath = fileadmin/templates/example.com/Html/Layouts/
 }
 
 styles.content {
