@@ -13,6 +13,19 @@ $('.navbar .dropdown').hover(function() {
 });
 */
 
+// Bei der 1. Ebene wird nach einem Klick der Link zur Seite aktiviert
+/* 
+$('li.dropdown').on('click', function() {
+    var $el = $(this);
+    if ($el.hasClass('open')) {
+        var $a = $el.children('a.dropdown-toggle');
+        if ($a.length && $a.attr('href')) {
+            location.href = $a.attr('href');
+        }
+    }
+});
+*/
+
 // Show ToTop-Icon only if scrolled a little bit down
 var showed = false;
 var scrollTop = 0;
