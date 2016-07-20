@@ -243,3 +243,96 @@ RTE {
 		}   
 	} 
 } 
+
+# Tabs Container
+tx_gridelements.setup.uebb_bootstrap_tabs_container {
+    title = Tabs: Umfassender Container für die Tab Inhalte
+	description = Ein Element welches mehrere Tabs enthält
+	flexformDS = FILE:fileadmin/templates/example.com/Resources/XML/Tabs.xml
+
+	config {
+		colCount = 1
+		rowCount = 1
+
+		rows {
+			1 {
+				columns {
+					1 {
+						name = Tabs: Umfassender Container für die Tab Inhalte - Überschrift auf VERBORGEN stellen
+						colPos = 0
+						allowed = gridelements_pi1
+					}
+				}
+			}
+		}
+	}
+}
+
+# Tab Element
+tx_gridelements.setup.uebb_bootstrap_tabs_tab {
+  	title = Tab
+	description = Ein einzelner Tab für einen Tab-Container - Überschrift auf VERBORGEN stellen - wird als Tab angezeigt
+
+	config {
+		colCount = 1
+		rowCount = 1
+
+		rows {
+			1 {
+				columns {
+					1 {
+						name = Tab Inhalt Element
+						colPos = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+# Accordion Container außen herum
+tx_gridelements.setup.uebb_bootstrap_collapsible_container {
+  title = Accordion äußerer Container - Überschrift auf VERBORGEN stellen
+	description = Ein Element das den Accordion Inhalt enthält
+
+	config {
+		colCount = 1
+		rowCount = 1
+
+		rows {
+			1 {
+				columns {
+					1 {
+						name = Accordion äußerer Container
+						colPos = 0
+						allowed = gridelements_pi1
+					}
+				}
+			}
+		}
+	}
+}
+
+# Accordion Inhaltselement
+tx_gridelements.setup.uebb_bootstrap_collapsible_element {
+  	title = Accordion Element zum Ausklappen - Überschrift auf VERBORGEN stellen - wird als Link verwendet
+	description = Ein Element für einen Accordion Inhalt
+	flexformDS = FILE:fileadmin/templates/example.com/Resources/XML/Accordion.xml
+	
+	config {
+		colCount = 1
+		rowCount = 1
+
+		rows {
+			1 {
+				columns {
+					1 {
+						name = Collapsible Element
+						colPos = 0
+					}
+				}
+			}
+		}
+	}
+}
+
