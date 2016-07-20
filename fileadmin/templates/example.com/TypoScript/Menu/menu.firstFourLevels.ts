@@ -10,10 +10,9 @@ menu.firstFourLevels {
 	  ATagParams = class="dropdown-toggle" data-toggle="dropdown"
     }
     ACTIFSUB < .IFSUB
-    ACTIFSUB.ATagParams = class="active"
+    ACTIFSUB.ATagParams = class="active dropdown-toggle" data-toggle="dropdown"
     CURIFSUB < .ACTIFSUB
-    CURIFSUB.ATagParams = class="selected"
-  }
+    CURIFSUB.ATagParams = class="selected dropdown-toggle" data-toggle="dropdown"
   
   # Copy the configuration of the first level of this menu to level 2
   2 < .1
