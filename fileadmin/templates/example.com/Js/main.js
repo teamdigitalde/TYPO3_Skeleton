@@ -1,3 +1,4 @@
+var bodywidth = document.body.clientWidth;
 // Fancybox
 $(document).ready(function() {
 	$('.fancybox').fancybox();
@@ -7,9 +8,15 @@ $(document).ready(function() {
 // Dropdown mit Slideout
 /*
 $('.navbar .dropdown, .dropdown-submenu ').hover(function() {
-  $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+	if(bodywidth >= 720) {
+		$(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+		$(this).find('.dropdown-menu-arrow').first().stop(true, true).delay(250).slideDown();
+	}
 }, function() {
-  $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
+	if(bodywidth >= 720) {
+		$(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+		$(this).find('.dropdown-menu-arrow').first().stop(true, true).delay(100).slideUp();
+	}
 });
 */
 
