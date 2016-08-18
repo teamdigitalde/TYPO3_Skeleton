@@ -1,5 +1,4 @@
 // Fancybox
-var bodywidth = document.body.clientWidth;
 $(document).ready(function() {
 	$('.fancybox').fancybox();
 	$('.dropdown-submenu > a').submenupicker();
@@ -7,16 +6,10 @@ $(document).ready(function() {
 
 // Dropdown mit Slideout
 /*
-$('.navbar .dropdown').hover(function () {
-	if(bodywidth >= 720) {
-		$(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
-		$(this).find('.dropdown-menu-arrow').first().stop(true, true).delay(250).slideDown();
-	}
-}, function () {
-	if(bodywidth >= 720) {
-		$(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
-		$(this).find('.dropdown-menu-arrow').first().stop(true, true).delay(100).slideUp();
-	}
+$('.navbar .dropdown, .dropdown-submenu ').hover(function() {
+  $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+}, function() {
+  $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
 });
 */
 

@@ -8,6 +8,98 @@ img {max-width: 100%;height: auto;}
 	top: 0;
 	text-align: center;
 }
+/* Bootstrap Navbar Default überschreiben */
+.navbar {
+    margin-bottom: 0px;
+    border: 0px;
+}
+.navbar-default {
+    background-image: none;
+    border-radius: 0px;
+    background-color: #F00;
+    border: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/* ### Linkfarbe ### */
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+/* ### Link Hover, Active und Co.### */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a.selected, .navbar-default .navbar-nav > li > a.active {
+    color: #F00;
+    background-color: #0F0;
+}
+.navbar-brand, .navbar-nav > li > a {
+    text-shadow: none;
+}
+/* Navbar 100% breit / Table */
+/*
+.navbar-nav {
+    float: none;
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+.navbar-nav > li {
+    float: none;
+    display: table-cell;
+    text-align: center;
+}
+*/
+
+/* Bootstrap Navbar Default überschreiben Ende */
+
+/* Hauptmenü als Aufklappmenü */
+.dropdown-submenu{
+    position:relative;
+    }
+.dropdown-submenu > a:after{
+    display:block;
+    content:" ";
+    float:right;
+    width:0;
+    height:0;
+    border-color:transparent;
+    border-style:solid;
+    border-width:5px 0 5px 5px;
+    border-left-color:#333;
+    margin-top:5px;
+    margin-right:-10px;
+    }
+.dropdown-submenu:hover > a:after{
+    border-left-color:#333;
+    }
+.dropdown-submenu .pull-left{
+    float:none;
+    }
+/* Wenn SlideOut in main.js aktiv, dann entfernen */
+.dropdown-submenu:hover > .dropdown-menu{
+    display:block;
+    }
+ul.nav > li.dropdown:hover > ul.dropdown-menu {
+        display: block;
+        margin-top:0px
+    }
+	
+/* Wenn SlideOut in main.js aktiv, dann entfernen Ende */	
+
+/* Wenn SlideOut in main.js aktiv, dann hinzufügen */
+/*
+@media (max-width: 1024px) {
+.dropdown-submenu:hover > .dropdown-menu{
+    display:block;
+    }
+ul.nav > li.dropdown:hover > ul.dropdown-menu {
+        display: block;
+        margin-top:0px
+    }
+}
+*/
+/* Wenn SlideOut in main.js aktiv, dann hinzufügen Ende */
+
+/* Hauptmenü als Aufklappmenü ENDE*/
+
 @media (min-width: 768px) {
 	.navbar span.dropdown-toggle {display: none;}
 }
