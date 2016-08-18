@@ -27,15 +27,17 @@
 </div>
 <div role="main" class="container">
 	<div class="row" id="content">
-		<f:if condition="{layoutclass} == 'layout1'">
-			<f:render section="Layout1" />
-		</f:if>
-		<f:if condition="{layoutclass} == 'layout2'">
-			<f:render section="Layout2" />
-		</f:if>
-		<f:if condition="{layoutclass} == 'layout3'">
-			<f:render section="Layout3" />
-		</f:if>
+		<f:switch expression="{data.layout}">
+			<f:case value="1">
+				<f:render section="Layout2"/>
+			</f:case>
+			<f:case value="2>
+				<f:render section="Layout3"/>
+			</f:case>
+			<f:case default="true">
+				<f:render section="Layout1"/>
+			</f:case>
+		</f:switch>
 	</div>
 </div>
 <footer class="pagefooter container">
