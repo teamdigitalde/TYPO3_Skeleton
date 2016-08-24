@@ -33,7 +33,7 @@ page {
 			mainMenu < menu.firstFourLevels
 			topMenu < menu.top
 			headerslideshow < lib.headerslideshow
-			
+			backend_layout < lib.backend_layout
 			layoutclass < lib.layoutSwitch
 			
 			# Insert content as already constructed in TypoScript objects into subparts
