@@ -68,3 +68,6 @@ function showToTop() {
     $( "div.totop" ).show( "slow");
     showed = true;
 }
+window.onresize = function(event) {
+    bodywidth = document.body.clientWidth;
+};
