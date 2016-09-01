@@ -245,6 +245,8 @@ _paq.push(['enableLinkTracking']);
 			value = {$headerData.piwik.tracker_url}
 			wrap = var u="|";
 		}
+		25 = TEXT
+		25.value = _paq.push(['setTrackerUrl', u+'piwik.php']);
 		30 = TEXT
 		30 {
 			value = {$headerData.piwik.site_id}
