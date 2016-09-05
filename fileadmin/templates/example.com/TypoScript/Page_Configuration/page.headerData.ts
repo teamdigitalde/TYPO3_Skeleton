@@ -99,8 +99,8 @@ lib.hreflang {
 						returnLast = url
 						forceAbsoluteUrl = 0
 						additionalParams < lib.currentUrl.10.typolink.additionalParams
-						additionalParams.cObject.10 = TEXT
-						additionalParams.cObject.10.value = &L=0 || &L=1 || &L=2
+						additionalParams.cObject.1 = TEXT
+						additionalParams.cObject.1.value = &L=0 || &L=1 || &L=2
 					}
 				}
 			}
