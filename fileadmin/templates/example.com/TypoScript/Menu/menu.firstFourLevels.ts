@@ -40,7 +40,12 @@ menu.firstFourLevels {
     
 	NO.wrapItemAndSub = <li class="level2 first x{field:uid}">|</li> |*| <li class="level2 x{field:uid}">|</li> |*| <li class="level2 last x{field:uid}">|</li>
 	
-    IFSUB = 1
+    ACT = 1
+    ACT.wrapItemAndSub = <li class="active level2 first x{field:uid}">|</li>
+	ACT.wrapItemAndSub.insertData = 1
+    ACT.ATagTitle.field = abstract // description // title
+	
+	IFSUB = 1
     IFSUB.wrapItemAndSub = <li class="dropdown-submenu level2 x{field:uid}">|</li>
 	IFSUB.wrapItemAndSub.insertData = 1
     IFSUB.ATagParams = class="dropdown-toogle" data-toogle="dropdown"
