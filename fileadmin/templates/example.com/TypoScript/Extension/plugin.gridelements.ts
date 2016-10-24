@@ -96,7 +96,7 @@ tt_content.gridelements_pi1.20.10.setup.uebb_bootstrap_tabs_container {
 	# Render navigation using fluid
 	cObject = FLUIDTEMPLATE
 	cObject {
-		file = fileadmin/templates/example.com/Html/Gridelements/tabs.html
+		file = fileadmin/templates/example.com/Html/tabs.html
 	}
 
 	# Add the renderObj of the tab directly, this prevents the "csc-default"-wrap
@@ -128,7 +128,7 @@ innerWrap.cObject {
 	}
 
 	# Build: <div class="panel panel-[default,primary,success,...]">|</div>
-	outerWrap = <div class="panel {field: flexform_style}">|</div>
+	outerWrap = <div id="c{field: uid}" class="panel {field: flexform_style}">|</div>
 	outerWrap.insertData = 1
 
 	# Build: <div id="collapse-[panel-uid]" class="panel-collapse collapse [in]">|</div>
