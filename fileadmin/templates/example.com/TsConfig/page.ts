@@ -126,12 +126,15 @@ RTE.classes {
 	}
 	kleiner {
 		name = Schrift kleiner
+		value = font-size: .9em;
 	}
 	groesser-125{
 		name = Schrift 125%
+		value = font-size: 1.25em;
 	}
 	groesser-150{
 		name = Schrift 150%
+		value = font-size: 1.5em;
 	} 
 	fauxHeadline {
 		name = Überschrift ohne H-Tag
