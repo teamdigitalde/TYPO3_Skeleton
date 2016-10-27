@@ -38,6 +38,26 @@ $('li.dropdown').on('click', function() {
 });
 */
 
+// tel: usw. auf dem Desktop nicht verlinken
+$('a[href^="tel:"], a[href^="fax:"], a[href^="sms:"]').click(function() {
+    if (navigator.userAgent.search(/(Android|iPhone|Windows Phone|Blackberry)/i) == -1) {
+        return false;    
+                }});
+
+if (navigator.userAgent.search(/(Android|iPhone|Windows Phone|Blackberry)/i) == -1) {
+    $('a[href^="tel:"]').css({
+        color: 'white',  // Schriftfarbe des Links
+        textDecoration: 'none' // Unterstreichung unterdrücken
+    });
+    $('a[href^="tel:"]').mouseenter(function() {
+         $(this).css({
+             cursor: 'text' // Cursor beim Hover-State auf text setzen
+         });
+    });
+}
+// tel: usw. auf dem Desktop nicht verlinken - ENDE
+
+
 // Show ToTop-Icon only if scrolled a little bit down
 var showed = false;
 var scrollTop = 0;
