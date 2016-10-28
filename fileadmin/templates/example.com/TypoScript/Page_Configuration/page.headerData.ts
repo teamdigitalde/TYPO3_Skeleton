@@ -8,13 +8,6 @@ lib.currentUrl {
 		useCacheHash = 1
 		additionalParams.cObject = COA
 		additionalParams.cObject {
-			# EXT:tt_news
-			10 = TEXT
-			10.dataWrap = &tx_ttnews[tt_news]={GP:tx_ttnews|tt_news}
-			10.if.isTrue.data = GP:tx_ttnews|tt_news
-			20 = TEXT
-			20.dataWrap = &tx_ttnews[cat]={GP:tx_ttnews|cat}
-			20.if.isTrue.data = GP:tx_ttnews|cat
 			#EXT:news
 			100 = TEXT
 			100.dataWrap = &tx_news_pi1[news]={GP:tx_news_pi1|news}
@@ -26,6 +19,7 @@ lib.currentUrl {
 			120.dataWrap = &tx_news_pi1[action]={GP:tx_news_pi1|action}
 			120.if.isTrue.data = GP:tx_news_pi1|action
 			#EXT:cal
+			/*
 			200 = TEXT
 			200.dataWrap = &tx_cal_controller[view]={GP:tx_cal_controller|view}
 			200.if.isTrue.data = GP:tx_cal_controller|view
@@ -53,6 +47,7 @@ lib.currentUrl {
 			280 = TEXT
 			280.dataWrap = &tx_cal_controller[category][0]={GP:tx_cal_controller|category|0}
 			280.if.isTrue.data = GP:tx_cal_controller|category|9
+			*/
 		}
 	}
 }
