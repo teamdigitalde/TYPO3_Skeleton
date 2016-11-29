@@ -21,15 +21,9 @@ mod.wizards.newContentElement.renderMode = tabs
 
 # Bild und Spalten -> Text mit Bild
 # Bildposition "Oben links"
-mod.wizards.newContentElement.wizardItems.common.elements.textpic.tt_content_defValues.imageorient = 2
+mod.wizards.newContentElement.wizardItems.common.elements.textmedia.tt_content_defValues.imageorient = 2
 # Anzahl der Spalten auf 1
-mod.wizards.newContentElement.wizardItems.common.elements.textpic.tt_content_defValues.imagecols = 0
-
-# Bild und Spalten -> Bild
-# Bildposition "Oben links"
-mod.wizards.newContentElement.wizardItems.common.elements.image.tt_content_defValues.imageorient = 2
-# Anzahl der Spalten auf 1
-mod.wizards.newContentElement.wizardItems.common.elements.image.tt_content_defValues.imagecols = 0
+mod.wizards.newContentElement.wizardItems.common.elements.textmedia.tt_content_defValues.imagecols = 1
 
 TCEFORM {
 	pages {
