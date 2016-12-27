@@ -9,7 +9,6 @@ menu.breadcrumb.20 {
   includeNotInMenu = 1
   1 = TMENU
   1 {
-    noBlur = 1
     wrap = <ol aria-labelledby="breadcrumblabel">|</ol>
     NO.stdWrap.htmlSpecialChars = 1
     NO.wrapItemAndSub = <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="first">|</li>|*|<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li>|*|<li class="last" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li>
