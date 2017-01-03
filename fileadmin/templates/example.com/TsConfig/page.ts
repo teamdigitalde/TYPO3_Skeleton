@@ -106,6 +106,22 @@ TCAdefaults {
 	}
 }
 
+# "Save and Preview" for news records
+#TCEMAIN.preview {
+#	tx_news_domain_model_news {
+#		# !!! EDIT PID !!! 
+#		previewPageId = 123
+#		useDefaultLanguageRecord = 0
+#		fieldToParameterMap {
+#			uid = tx_news_pi1[news_preview]
+#		}
+#		additionalGetParameters {
+#			tx_news_pi1.controller = News
+#			tx_news_pi1.action = detail
+#		}
+#	}
+#}
+
 
 #### RTE  ###
 
