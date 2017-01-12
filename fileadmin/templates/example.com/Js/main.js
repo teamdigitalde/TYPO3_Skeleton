@@ -6,7 +6,9 @@ $(document).ready(function() {
 	
 	    // ersetzt das (at) durch @ ohne das für crawler offen zu legen
     $('a[href*="linkTo_UnCryptMailto"]').each(function() {
-        $(this).text($(this).text().replace('(at)', '@'));
+		if(typeof $(this) === 'string'){
+			$(this).text($(this).text().replace('(at)', '@'));
+		}
     });
 });
 
