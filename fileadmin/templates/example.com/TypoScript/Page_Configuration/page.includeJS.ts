@@ -1,5 +1,5 @@
 page {
-  includeJSlibs {
+  includeJSLibs {
     modernizr = {$filepaths.scripts}libs/modernizr-3.2.0-custom.min.js
     #selectivizr = {filepaths.scripts}libs/selectivizr-min.js
     #selectivizr {
