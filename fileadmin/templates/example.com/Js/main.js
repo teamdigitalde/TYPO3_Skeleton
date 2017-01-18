@@ -3,7 +3,7 @@ var bodywidth = document.body.clientWidth;
 $(document).ready(function() {
 	$('.fancybox').fancybox();
 	$('.dropdown-submenu > a').submenupicker();
-	
+
 	    // ersetzt das (at) durch @ ohne das für crawler offen zu legen
     $('a[href*="linkTo_UnCryptMailto"]').each(function() {
 		if(typeof $(this) === 'string'){
@@ -28,7 +28,7 @@ $('.navbar .dropdown, .dropdown-submenu ').hover(function() {
 */
 
 // Bei der 1. Ebene wird nach einem Klick der Link zur Seite aktiviert
-/* 
+/*
 $('li.dropdown').on('click', function() {
     var $el = $(this);
     if ($el.hasClass('open')) {
@@ -40,10 +40,17 @@ $('li.dropdown').on('click', function() {
 });
 */
 
+// Accordion Pfeile hoch / runter
+$('.collapse').on('shown.bs.collapse', function(){
+	$(this).parent().find(".accordion-toggle").removeClass("collapsed");
+}).on('hidden.bs.collapse', function(){
+	$(this).parent().find(".accordion-toggle").addClass("collapsed");
+});
+
 // tel: usw. auf dem Desktop nicht verlinken
 $('a[href^="tel:"], a[href^="fax:"], a[href^="sms:"]').click(function() {
     if (navigator.userAgent.search(/(Android|iPhone|Windows Phone|Blackberry)/i) == -1) {
-        return false;    
+        return false;
                 }});
 
 if (navigator.userAgent.search(/(Android|iPhone|Windows Phone|Blackberry)/i) == -1) {
