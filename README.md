@@ -15,6 +15,6 @@ Add the following uncommented line, to the root sys_template Constants to includ
 `<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/example.com/TypoScript/Constants/Constants.ts">`
 
 Add the following uncommented line, to the root sys_template Setup to include this file
-`<INCLUDE_TYPOSCRIPT: source="DIR:fileadmin/templates/example.com/TypoScript" extensions="ts" >`
+`<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/example.com/TypoScript/root.ts">`
 
 After fetching the default files, the only thing to to is adding a new root template to the root page, adding static extension templates and overwriting some constants. Done :-)
