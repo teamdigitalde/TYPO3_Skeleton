@@ -40,6 +40,13 @@ $('li.dropdown').on('click', function() {
 });
 */
 
+
+/* Geschmeitigeres Scrollen von Anchorlinks */
+/*jQuery('a[href*=#]').on('click', function(event){
+	event.preventDefault();
+	jQuery('html,body').animate({scrollTop:jQuery(this.hash).offset().top}, 500);
+});*/
+
 // Accordion Pfeile hoch / runter
 $('.collapse').on('shown.bs.collapse', function(){
 	$(this).parent().find(".accordion-toggle").removeClass("collapsed");
