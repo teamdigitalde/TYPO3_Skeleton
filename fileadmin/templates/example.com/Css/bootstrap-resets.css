@@ -100,6 +100,16 @@ ul.nav > li.dropdown:hover > ul.dropdown-menu {
 
 /* Hauptmenü als Aufklappmenü ENDE*/
 
+/* Accordion */
+.panel-heading {
+    padding: 0px;
+}
+.panel-title a {
+    display: block;
+    padding: 10px 15px;
+	text-decoration: none !important;
+}
+
 @media (min-width: 768px) {
 	.navbar span.dropdown-toggle {display: none;}
 }
