@@ -4,12 +4,12 @@ $(document).ready(function() {
 	$('.fancybox').fancybox();
 	$('.dropdown-submenu > a').submenupicker();
 
-	    // ersetzt das (at) durch @ ohne das für crawler offen zu legen
-    $('a[href*="linkTo_UnCryptMailto"]').each(function() {
-		if(typeof $(this) === 'string'){
+	// reset spamProtectedEmailAdresses (at) by @ without showing clear text email addresses to crawlers
+	$('a[href*="linkTo_UnCryptMailto"]').each(function() {
+		if($(this).text().indexOf('(at)') > 0){
 			$(this).text($(this).text().replace('(at)', '@'));
 		}
-    });
+	});
 });
 
 // Dropdown mit Slideout
