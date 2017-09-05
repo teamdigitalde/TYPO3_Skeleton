@@ -1,5 +1,5 @@
 # Add the following uncommented line, to the website's root page Resources > TypoScript Configuration to include this file
-# <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/default/TSConfig/page.ts">
+# <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/example.com/TsConfig/page.ts">
 
 #wo liegen die Backend Layouts?
 TCEFORM.pages.backend_layout.PAGE_TSCONFIG_ID = 13
